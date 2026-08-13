@@ -1,0 +1,5 @@
+model,metric,observed,as_or_more_extreme,draws,plus_one_corrected_p
+word_tfidf_bt,correctness,0.11504537098876513,0,20000,4.999750012499375e-05
+word_tfidf_bt,signed_margin,0.044817376225342265,0,20000,4.999750012499375e-05
+minilm_frozen_bt,correctness,0.01882454110328231,874,20000,0.04374781260936953
+minilm_frozen_bt,signed_margin,0.018363758887862396,0,20000,4.999750012499375e-05

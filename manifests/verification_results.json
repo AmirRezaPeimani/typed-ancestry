@@ -1,0 +1,63 @@
+{
+  "competence": {
+    "correct": 317,
+    "exact_ties": 1,
+    "incorrect": 82,
+    "pairs": 400,
+    "strict_accuracy": 0.7925,
+    "strict_wilson_95": [
+      0.7500694660392275,
+      0.829365841775209
+    ],
+    "tie_adjusted_accuracy": 0.79375
+  },
+  "factorials": {
+    "controlled_character": {
+      "did": 0.0859375,
+      "unique_prediction_vectors": 1,
+      "untouched": 0.009765625
+    },
+    "controlled_neural": {
+      "did": -0.0022786458333333335,
+      "unique_prediction_vectors": 3,
+      "untouched": -0.012044270833333334
+    },
+    "controlled_word": {
+      "did": 0.15625,
+      "unique_prediction_vectors": 1,
+      "untouched": 0.01171875
+    }
+  },
+  "figures": [
+    {
+      "figure": "learning_dynamics_main",
+      "pdf_sha256": "5caa3a2dbda86fd8618bf7ef2f3db4ae027092319673b4838588f1f436e75984",
+      "png_sha256": "200531fcae4a84f81837bf5f376a2124cf5e4cfb4e42db08fc4769bb754825d5"
+    },
+    {
+      "figure": "learning_dynamics_acquisition",
+      "pdf_sha256": "d6c599c0ece75de6de05fae09f3e00589a104cca1fdcbd941ac7b720684c795d",
+      "png_sha256": "fd88a898101602d52770b3dcb10e5b284f7c3d95bea7ab460d20c0a54f10953f"
+    },
+    {
+      "figure": "controlled_cross_learner_factorial_main",
+      "pdf_sha256": "d900ba0a8b61ec2db2ae83b03cb06cc6a641d780587261d7ce4980969c4dd0a5",
+      "png_sha256": "a710da1c3d247cc252bd6daf23ccfeffabe3f5507c28edb9e8afc0e22bcb1015"
+    },
+    {
+      "figure": "candidate_selection_main",
+      "pdf_sha256": "7941f7161b29bfb6c23972b2541153eb346b4dcb1ef4cf1e18b9518c9c48f3af",
+      "png_sha256": "af054ecf0a03d1dcc641b76f716d45b463cdc27d825fb832fea94bf19d9a92c9"
+    },
+    {
+      "figure": "candidate_selection_supp",
+      "pdf_sha256": "6cab9d521871f8976c2a5f054fda9a130712a9de1cc9040961b37c42a9c92865",
+      "png_sha256": "251d97ee98424ab1957e843be683cec14614dbb9bc9e83e0fd36082c381f227e"
+    }
+  ],
+  "registry_files_checked": 23,
+  "scans": {
+    "machine_specific_path_matches": 0
+  },
+  "status": "pass"
+}

@@ -1,0 +1,21 @@
+field,value,unit
+model_id,Qwen/Qwen2.5-1.5B-Instruct,
+model_revision,989aa7980e4cf806f80c7fef2b1adb7bc71aa306,
+scalar_outputs,1,head outputs
+loss,Bradley-Terry pairwise,
+serialization_max_length,512,tokens
+epochs,1,epochs
+training_pairs_per_boundary,4512,pairs
+effective_pair_batch,32,pairs
+microbatch_pairs,4,pairs
+gradient_accumulation,8,steps
+optimizer,AdamW,
+learning_rate,0.0002,
+weight_decay,0.01,
+gradient_clip,1.0,
+lora_rank,16,
+lora_alpha,32,
+lora_dropout,0.05,
+overfit_pairs,64,pairs
+overfit_accuracy,1.0,proportion
+selected_checkpoint_fraction,100,percent

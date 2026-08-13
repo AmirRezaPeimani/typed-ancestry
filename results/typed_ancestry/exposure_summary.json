@@ -1,0 +1,1670 @@
+{
+  "bootstrap_replicates": 20000,
+  "dataset": "nvidia/HelpSteer3",
+  "endpoints": [
+    {
+      "atom_type": "context",
+      "cluster_bootstrap_95ci": [
+        0.579172610556348,
+        0.6504992867332382
+      ],
+      "context_clusters": 701,
+      "estimate": 0.6148359486447932,
+      "evaluation_view": "edit",
+      "exposed_rows": 447,
+      "row_rate": 0.6199722607489597,
+      "rows": 721,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.5839944795347145,
+        0.654678402506923
+      ]
+    },
+    {
+      "atom_type": "context",
+      "cluster_bootstrap_95ci": [
+        0.8045649072753209,
+        0.8601997146932953
+      ],
+      "context_clusters": 701,
+      "estimate": 0.833095577746077,
+      "evaluation_view": "edit",
+      "exposed_rows": 603,
+      "row_rate": 0.8363384188626907,
+      "rows": 721,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.8075636112551732,
+        0.8615482256823657
+      ]
+    },
+    {
+      "atom_type": "context",
+      "cluster_bootstrap_95ci": [
+        0.18830242510699002,
+        0.24821683309557774
+      ],
+      "context_clusters": 701,
+      "estimate": 0.21825962910128388,
+      "evaluation_view": "edit",
+      "exposed_rows": 156,
+      "row_rate": 0.21636615811373092,
+      "rows": 721,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.18785538663782037,
+        0.24788329107877072
+      ]
+    },
+    {
+      "atom_type": "edit_link",
+      "cluster_bootstrap_95ci": [
+        0.5492154065620543,
+        0.6219686162624821
+      ],
+      "context_clusters": 701,
+      "estimate": 0.5863052781740371,
+      "evaluation_view": "edit",
+      "exposed_rows": 427,
+      "row_rate": 0.5922330097087378,
+      "rows": 721,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.5559659208932255,
+        0.6275224797515015
+      ]
+    },
+    {
+      "atom_type": "edit_link",
+      "cluster_bootstrap_95ci": [
+        0.6419400855920114,
+        0.7104136947218259
+      ],
+      "context_clusters": 701,
+      "estimate": 0.6761768901569187,
+      "evaluation_view": "edit",
+      "exposed_rows": 491,
+      "row_rate": 0.680998613037448,
+      "rows": 721,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.646094867425745,
+        0.7139838736890955
+      ]
+    },
+    {
+      "atom_type": "edit_link",
+      "cluster_bootstrap_95ci": [
+        0.06847360912981455,
+        0.11126961483594865
+      ],
+      "context_clusters": 701,
+      "estimate": 0.0898716119828816,
+      "evaluation_view": "edit",
+      "exposed_rows": 64,
+      "row_rate": 0.08876560332871013,
+      "rows": 721,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.0701261766322862,
+        0.11176388665851696
+      ]
+    },
+    {
+      "atom_type": "feedback",
+      "cluster_bootstrap_95ci": [
+        0.5592011412268189,
+        0.6319543509272468
+      ],
+      "context_clusters": 701,
+      "estimate": 0.5962910128388017,
+      "evaluation_view": "edit",
+      "exposed_rows": 434,
+      "row_rate": 0.6019417475728155,
+      "rows": 721,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.5657623595171213,
+        0.6370406096165244
+      ]
+    },
+    {
+      "atom_type": "feedback",
+      "cluster_bootstrap_95ci": [
+        0.776034236804565,
+        0.8345221112696148
+      ],
+      "context_clusters": 701,
+      "estimate": 0.8059914407988588,
+      "evaluation_view": "edit",
+      "exposed_rows": 584,
+      "row_rate": 0.8099861303744799,
+      "rows": 721,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.779736090721325,
+        0.8369504888891489
+      ]
+    },
+    {
+      "atom_type": "feedback",
+      "cluster_bootstrap_95ci": [
+        0.1797432239657632,
+        0.24108416547788872
+      ],
+      "context_clusters": 701,
+      "estimate": 0.20970042796005706,
+      "evaluation_view": "edit",
+      "exposed_rows": 150,
+      "row_rate": 0.20804438280166435,
+      "rows": 721,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.1800013543503662,
+        0.23918197894715174
+      ]
+    },
+    {
+      "atom_type": "principle",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 701,
+      "estimate": 0.0,
+      "evaluation_view": "edit",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 721,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.0,
+        0.00529972282068981
+      ]
+    },
+    {
+      "atom_type": "principle",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 701,
+      "estimate": 0.0,
+      "evaluation_view": "edit",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 721,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.0,
+        0.00529972282068981
+      ]
+    },
+    {
+      "atom_type": "principle",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 701,
+      "estimate": 0.0,
+      "evaluation_view": "edit",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 721,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.0,
+        0.00529972282068981
+      ]
+    },
+    {
+      "atom_type": "record",
+      "cluster_bootstrap_95ci": [
+        0.5492154065620543,
+        0.62339514978602
+      ],
+      "context_clusters": 701,
+      "estimate": 0.5863052781740371,
+      "evaluation_view": "edit",
+      "exposed_rows": 427,
+      "row_rate": 0.5922330097087378,
+      "rows": 721,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.5559659208932255,
+        0.6275224797515015
+      ]
+    },
+    {
+      "atom_type": "record",
+      "cluster_bootstrap_95ci": [
+        0.5492154065620543,
+        0.62339514978602
+      ],
+      "context_clusters": 701,
+      "estimate": 0.5863052781740371,
+      "evaluation_view": "edit",
+      "exposed_rows": 427,
+      "row_rate": 0.5922330097087378,
+      "rows": 721,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.5559659208932255,
+        0.6275224797515015
+      ]
+    },
+    {
+      "atom_type": "record",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 701,
+      "estimate": 0.0,
+      "evaluation_view": "edit",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 721,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.0,
+        0.00529972282068981
+      ]
+    },
+    {
+      "atom_type": "response",
+      "cluster_bootstrap_95ci": [
+        0.5520684736091298,
+        0.62339514978602
+      ],
+      "context_clusters": 701,
+      "estimate": 0.5877318116975749,
+      "evaluation_view": "edit",
+      "exposed_rows": 428,
+      "row_rate": 0.5936199722607489,
+      "rows": 721,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.5573645282002566,
+        0.628883096514316
+      ]
+    },
+    {
+      "atom_type": "response",
+      "cluster_bootstrap_95ci": [
+        0.7902995720399429,
+        0.8473609129814551
+      ],
+      "context_clusters": 701,
+      "estimate": 0.818830242510699,
+      "evaluation_view": "edit",
+      "exposed_rows": 593,
+      "row_rate": 0.8224687933425797,
+      "rows": 721,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.7928894959603701,
+        0.8486301002787136
+      ]
+    },
+    {
+      "atom_type": "response",
+      "cluster_bootstrap_95ci": [
+        0.20114122681883023,
+        0.2624821683309558
+      ],
+      "context_clusters": 701,
+      "estimate": 0.23109843081312412,
+      "evaluation_view": "edit",
+      "exposed_rows": 165,
+      "row_rate": 0.2288488210818308,
+      "rows": 721,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.19966976593234909,
+        0.2609019284128517
+      ]
+    },
+    {
+      "atom_type": "context",
+      "cluster_bootstrap_95ci": [
+        0.04294478527607362,
+        0.12269938650306748
+      ],
+      "context_clusters": 163,
+      "estimate": 0.07975460122699386,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 13,
+      "row_rate": 0.07975460122699386,
+      "rows": 163,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.04719922190197004,
+        0.13166194984530522
+      ]
+    },
+    {
+      "atom_type": "context",
+      "cluster_bootstrap_95ci": [
+        0.6871165644171779,
+        0.8159509202453987
+      ],
+      "context_clusters": 163,
+      "estimate": 0.754601226993865,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 123,
+      "row_rate": 0.754601226993865,
+      "rows": 163,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.6831798514576098,
+        0.8142984167538948
+      ]
+    },
+    {
+      "atom_type": "context",
+      "cluster_bootstrap_95ci": [
+        0.6012269938650306,
+        0.7484662576687117
+      ],
+      "context_clusters": 163,
+      "estimate": 0.6748466257668712,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 110,
+      "row_rate": 0.6748466257668712,
+      "rows": 163,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.5996276969610932,
+        0.7420140053046389
+      ]
+    },
+    {
+      "atom_type": "edit_link",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 163,
+      "estimate": 0.0,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 163,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.0,
+        0.023024605801502687
+      ]
+    },
+    {
+      "atom_type": "edit_link",
+      "cluster_bootstrap_95ci": [
+        0.558282208588957,
+        0.7055214723926381
+      ],
+      "context_clusters": 163,
+      "estimate": 0.6319018404907976,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 103,
+      "row_rate": 0.6319018404907976,
+      "rows": 163,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.5556201227329712,
+        0.7021095824850373
+      ]
+    },
+    {
+      "atom_type": "edit_link",
+      "cluster_bootstrap_95ci": [
+        0.558282208588957,
+        0.7055214723926381
+      ],
+      "context_clusters": 163,
+      "estimate": 0.6319018404907976,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 103,
+      "row_rate": 0.6319018404907976,
+      "rows": 163,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.5556201227329712,
+        0.7021095824850373
+      ]
+    },
+    {
+      "atom_type": "feedback",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 163,
+      "estimate": 0.0,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 163,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.0,
+        0.023024605801502687
+      ]
+    },
+    {
+      "atom_type": "feedback",
+      "cluster_bootstrap_95ci": [
+        0.588957055214724,
+        0.7361963190184049
+      ],
+      "context_clusters": 163,
+      "estimate": 0.6625766871165644,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 108,
+      "row_rate": 0.6625766871165644,
+      "rows": 163,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.5869891748143795,
+        0.730677671152003
+      ]
+    },
+    {
+      "atom_type": "feedback",
+      "cluster_bootstrap_95ci": [
+        0.588957055214724,
+        0.7361963190184049
+      ],
+      "context_clusters": 163,
+      "estimate": 0.6625766871165644,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 108,
+      "row_rate": 0.6625766871165644,
+      "rows": 163,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.5869891748143795,
+        0.730677671152003
+      ]
+    },
+    {
+      "atom_type": "principle",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 163,
+      "estimate": 0.0,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 163,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.0,
+        0.023024605801502687
+      ]
+    },
+    {
+      "atom_type": "principle",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 163,
+      "estimate": 0.0,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 163,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.0,
+        0.023024605801502687
+      ]
+    },
+    {
+      "atom_type": "principle",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 163,
+      "estimate": 0.0,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 163,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.0,
+        0.023024605801502687
+      ]
+    },
+    {
+      "atom_type": "record",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 163,
+      "estimate": 0.0,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 163,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.0,
+        0.023024605801502687
+      ]
+    },
+    {
+      "atom_type": "record",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 163,
+      "estimate": 0.0,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 163,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.0,
+        0.023024605801502687
+      ]
+    },
+    {
+      "atom_type": "record",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 163,
+      "estimate": 0.0,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 163,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.0,
+        0.023024605801502687
+      ]
+    },
+    {
+      "atom_type": "response",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.018404907975460124
+      ],
+      "context_clusters": 163,
+      "estimate": 0.006134969325153374,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 1,
+      "row_rate": 0.006134969325153374,
+      "rows": 163,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.0010837948860926427,
+        0.03392823906508486
+      ]
+    },
+    {
+      "atom_type": "response",
+      "cluster_bootstrap_95ci": [
+        0.6257668711656442,
+        0.7668711656441718
+      ],
+      "context_clusters": 163,
+      "estimate": 0.6993865030674846,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 114,
+      "row_rate": 0.6993865030674846,
+      "rows": 163,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.6250684949042024,
+        0.7645229199602289
+      ]
+    },
+    {
+      "atom_type": "response",
+      "cluster_bootstrap_95ci": [
+        0.6196319018404908,
+        0.7607361963190185
+      ],
+      "context_clusters": 163,
+      "estimate": 0.6932515337423313,
+      "evaluation_view": "edit_quality",
+      "exposed_rows": 113,
+      "row_rate": 0.6932515337423313,
+      "rows": 163,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.6186873061929019,
+        0.7589166805218548
+      ]
+    },
+    {
+      "atom_type": "context",
+      "cluster_bootstrap_95ci": [
+        0.6005063291139241,
+        0.6430379746835443
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.6217721518987341,
+      "evaluation_view": "feedback",
+      "exposed_rows": 1270,
+      "row_rate": 0.622854340362923,
+      "rows": 2039,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.6016046700186345,
+        0.643641968107273
+      ]
+    },
+    {
+      "atom_type": "context",
+      "cluster_bootstrap_95ci": [
+        0.6541772151898734,
+        0.6951898734177215
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.6744303797468354,
+      "evaluation_view": "feedback",
+      "exposed_rows": 1379,
+      "row_rate": 0.67631191760667,
+      "rows": 2039,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.6556883367086555,
+        0.6962724074281261
+      ]
+    },
+    {
+      "atom_type": "context",
+      "cluster_bootstrap_95ci": [
+        0.043037974683544304,
+        0.06278481012658228
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.052658227848101265,
+      "evaluation_view": "feedback",
+      "exposed_rows": 109,
+      "row_rate": 0.05345757724374693,
+      "rows": 2039,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.04450669252942992,
+        0.06408786230634296
+      ]
+    },
+    {
+      "atom_type": "edit_link",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.0,
+      "evaluation_view": "feedback",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2039,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.0,
+        0.0018804488248988982
+      ]
+    },
+    {
+      "atom_type": "edit_link",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.0,
+      "evaluation_view": "feedback",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2039,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.0,
+        0.0018804488248988982
+      ]
+    },
+    {
+      "atom_type": "edit_link",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.0,
+      "evaluation_view": "feedback",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2039,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.0,
+        0.0018804488248988982
+      ]
+    },
+    {
+      "atom_type": "feedback",
+      "cluster_bootstrap_95ci": [
+        0.5822784810126582,
+        0.6253164556962025
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.6040506329113924,
+      "evaluation_view": "feedback",
+      "exposed_rows": 1231,
+      "row_rate": 0.603727317312408,
+      "rows": 2039,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.5823209967424899,
+        0.624743530058426
+      ]
+    },
+    {
+      "atom_type": "feedback",
+      "cluster_bootstrap_95ci": [
+        0.6278481012658228,
+        0.669873417721519
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.6488607594936708,
+      "evaluation_view": "feedback",
+      "exposed_rows": 1324,
+      "row_rate": 0.6493379107405591,
+      "rows": 2039,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.6283627981181013,
+        0.6697513787654872
+      ]
+    },
+    {
+      "atom_type": "feedback",
+      "cluster_bootstrap_95ci": [
+        0.035949367088607596,
+        0.054177215189873416
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.04481012658227848,
+      "evaluation_view": "feedback",
+      "exposed_rows": 93,
+      "row_rate": 0.045610593428151054,
+      "rows": 2039,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.03737733605080858,
+        0.05555276285676261
+      ]
+    },
+    {
+      "atom_type": "principle",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.0,
+      "evaluation_view": "feedback",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2039,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.0,
+        0.0018804488248988982
+      ]
+    },
+    {
+      "atom_type": "principle",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.0,
+      "evaluation_view": "feedback",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2039,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.0,
+        0.0018804488248988982
+      ]
+    },
+    {
+      "atom_type": "principle",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.0,
+      "evaluation_view": "feedback",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2039,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.0,
+        0.0018804488248988982
+      ]
+    },
+    {
+      "atom_type": "record",
+      "cluster_bootstrap_95ci": [
+        0.5731645569620253,
+        0.6169620253164557
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.5954430379746836,
+      "evaluation_view": "feedback",
+      "exposed_rows": 1214,
+      "row_rate": 0.5953898970083374,
+      "rows": 2039,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.5739259319057658,
+        0.6164951104714359
+      ]
+    },
+    {
+      "atom_type": "record",
+      "cluster_bootstrap_95ci": [
+        0.5734177215189873,
+        0.6167088607594937
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.5954430379746836,
+      "evaluation_view": "feedback",
+      "exposed_rows": 1214,
+      "row_rate": 0.5953898970083374,
+      "rows": 2039,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.5739259319057658,
+        0.6164951104714359
+      ]
+    },
+    {
+      "atom_type": "record",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.0,
+      "evaluation_view": "feedback",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2039,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.0,
+        0.0018804488248988982
+      ]
+    },
+    {
+      "atom_type": "response",
+      "cluster_bootstrap_95ci": [
+        0.5817721518987342,
+        0.6245569620253164
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.6032911392405064,
+      "evaluation_view": "feedback",
+      "exposed_rows": 1231,
+      "row_rate": 0.603727317312408,
+      "rows": 2039,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.5823209967424899,
+        0.624743530058426
+      ]
+    },
+    {
+      "atom_type": "response",
+      "cluster_bootstrap_95ci": [
+        0.6369620253164557,
+        0.6784810126582278
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.6577215189873418,
+      "evaluation_view": "feedback",
+      "exposed_rows": 1344,
+      "row_rate": 0.6591466405100539,
+      "rows": 2039,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.638290758613368,
+        0.6794039881804722
+      ]
+    },
+    {
+      "atom_type": "response",
+      "cluster_bootstrap_95ci": [
+        0.04481012658227848,
+        0.06455696202531645
+      ],
+      "context_clusters": 1975,
+      "estimate": 0.05443037974683544,
+      "evaluation_view": "feedback",
+      "exposed_rows": 113,
+      "row_rate": 0.055419323197645906,
+      "rows": 2039,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.046298593433511795,
+        0.06621207538431151
+      ]
+    },
+    {
+      "atom_type": "context",
+      "cluster_bootstrap_95ci": [
+        0.5989769820971867,
+        0.6424552429667519
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.6209718670076726,
+      "evaluation_view": "preference",
+      "exposed_rows": 1254,
+      "row_rate": 0.6217154189390184,
+      "rows": 2017,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.6003387837705053,
+        0.6426293114538147
+      ]
+    },
+    {
+      "atom_type": "context",
+      "cluster_bootstrap_95ci": [
+        0.6531969309462916,
+        0.6941176470588235
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.6736572890025575,
+      "evaluation_view": "preference",
+      "exposed_rows": 1362,
+      "row_rate": 0.6752602875557759,
+      "rows": 2017,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.6545077264890099,
+        0.6953465368991657
+      ]
+    },
+    {
+      "atom_type": "context",
+      "cluster_bootstrap_95ci": [
+        0.04296675191815857,
+        0.06240409207161125
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.052685421994884914,
+      "evaluation_view": "preference",
+      "exposed_rows": 108,
+      "row_rate": 0.053544868616757564,
+      "rows": 2017,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.04454190759690607,
+        0.06424518099983492
+      ]
+    },
+    {
+      "atom_type": "edit_link",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.0,
+      "evaluation_view": "preference",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2017,
+      "scope": "same_view",
+      "wilson_95ci": [
+        1.0842021724855044e-19,
+        0.0019009204328853647
+      ]
+    },
+    {
+      "atom_type": "edit_link",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.0,
+      "evaluation_view": "preference",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2017,
+      "scope": "any_view",
+      "wilson_95ci": [
+        1.0842021724855044e-19,
+        0.0019009204328853647
+      ]
+    },
+    {
+      "atom_type": "edit_link",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.0,
+      "evaluation_view": "preference",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2017,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        1.0842021724855044e-19,
+        0.0019009204328853647
+      ]
+    },
+    {
+      "atom_type": "feedback",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.0,
+      "evaluation_view": "preference",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2017,
+      "scope": "same_view",
+      "wilson_95ci": [
+        1.0842021724855044e-19,
+        0.0019009204328853647
+      ]
+    },
+    {
+      "atom_type": "feedback",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.0,
+      "evaluation_view": "preference",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2017,
+      "scope": "any_view",
+      "wilson_95ci": [
+        1.0842021724855044e-19,
+        0.0019009204328853647
+      ]
+    },
+    {
+      "atom_type": "feedback",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.0,
+      "evaluation_view": "preference",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2017,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        1.0842021724855044e-19,
+        0.0019009204328853647
+      ]
+    },
+    {
+      "atom_type": "principle",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.0,
+      "evaluation_view": "preference",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2017,
+      "scope": "same_view",
+      "wilson_95ci": [
+        1.0842021724855044e-19,
+        0.0019009204328853647
+      ]
+    },
+    {
+      "atom_type": "principle",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.0,
+      "evaluation_view": "preference",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2017,
+      "scope": "any_view",
+      "wilson_95ci": [
+        1.0842021724855044e-19,
+        0.0019009204328853647
+      ]
+    },
+    {
+      "atom_type": "principle",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.0,
+      "evaluation_view": "preference",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2017,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        1.0842021724855044e-19,
+        0.0019009204328853647
+      ]
+    },
+    {
+      "atom_type": "record",
+      "cluster_bootstrap_95ci": [
+        0.5744245524296675,
+        0.6176470588235294
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.5959079283887468,
+      "evaluation_view": "preference",
+      "exposed_rows": 1201,
+      "row_rate": 0.5954387704511651,
+      "rows": 2017,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.5738576205270363,
+        0.6166570773576139
+      ]
+    },
+    {
+      "atom_type": "record",
+      "cluster_bootstrap_95ci": [
+        0.5741687979539642,
+        0.6179028132992327
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.5959079283887468,
+      "evaluation_view": "preference",
+      "exposed_rows": 1201,
+      "row_rate": 0.5954387704511651,
+      "rows": 2017,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.5738576205270363,
+        0.6166570773576139
+      ]
+    },
+    {
+      "atom_type": "record",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.0,
+      "evaluation_view": "preference",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 2017,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        1.0842021724855044e-19,
+        0.0019009204328853647
+      ]
+    },
+    {
+      "atom_type": "response",
+      "cluster_bootstrap_95ci": [
+        0.5823529411764706,
+        0.6253196930946292
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.6038363171355499,
+      "evaluation_view": "preference",
+      "exposed_rows": 1218,
+      "row_rate": 0.6038671294000991,
+      "rows": 2017,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.5823445546234275,
+        0.6249948178796071
+      ]
+    },
+    {
+      "atom_type": "response",
+      "cluster_bootstrap_95ci": [
+        0.6370843989769821,
+        0.6785166240409207
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.6578005115089514,
+      "evaluation_view": "preference",
+      "exposed_rows": 1329,
+      "row_rate": 0.6588993554784334,
+      "rows": 2017,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.6379254598025402,
+        0.6792691410911239
+      ]
+    },
+    {
+      "atom_type": "response",
+      "cluster_bootstrap_95ci": [
+        0.04424552429667519,
+        0.06419437340153453
+      ],
+      "context_clusters": 1955,
+      "estimate": 0.05396419437340153,
+      "evaluation_view": "preference",
+      "exposed_rows": 111,
+      "row_rate": 0.05503222607833416,
+      "rows": 2017,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.04589958165854965,
+        0.0658565671649651
+      ]
+    },
+    {
+      "atom_type": "context",
+      "cluster_bootstrap_95ci": [
+        0.5212947189097104,
+        0.5996592844974447
+      ],
+      "context_clusters": 587,
+      "estimate": 0.5604770017035775,
+      "evaluation_view": "principle",
+      "exposed_rows": 621,
+      "row_rate": 0.6064453125,
+      "rows": 1024,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.5761783984919425,
+        0.6359165682261007
+      ]
+    },
+    {
+      "atom_type": "context",
+      "cluster_bootstrap_95ci": [
+        0.6575809199318569,
+        0.7308347529812607
+      ],
+      "context_clusters": 587,
+      "estimate": 0.6950596252129472,
+      "evaluation_view": "principle",
+      "exposed_rows": 728,
+      "row_rate": 0.7109375,
+      "rows": 1024,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.682424096456079,
+        0.7378741862145386
+      ]
+    },
+    {
+      "atom_type": "context",
+      "cluster_bootstrap_95ci": [
+        0.10732538330494037,
+        0.1635434412265758
+      ],
+      "context_clusters": 587,
+      "estimate": 0.13458262350936967,
+      "evaluation_view": "principle",
+      "exposed_rows": 107,
+      "row_rate": 0.1044921875,
+      "rows": 1024,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.08721116935742498,
+        0.12472955063516716
+      ]
+    },
+    {
+      "atom_type": "edit_link",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 587,
+      "estimate": 0.0,
+      "evaluation_view": "principle",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 1024,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.0,
+        0.0037374040400176777
+      ]
+    },
+    {
+      "atom_type": "edit_link",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 587,
+      "estimate": 0.0,
+      "evaluation_view": "principle",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 1024,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.0,
+        0.0037374040400176777
+      ]
+    },
+    {
+      "atom_type": "edit_link",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 587,
+      "estimate": 0.0,
+      "evaluation_view": "principle",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 1024,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.0,
+        0.0037374040400176777
+      ]
+    },
+    {
+      "atom_type": "feedback",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 587,
+      "estimate": 0.0,
+      "evaluation_view": "principle",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 1024,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.0,
+        0.0037374040400176777
+      ]
+    },
+    {
+      "atom_type": "feedback",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 587,
+      "estimate": 0.0,
+      "evaluation_view": "principle",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 1024,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.0,
+        0.0037374040400176777
+      ]
+    },
+    {
+      "atom_type": "feedback",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 587,
+      "estimate": 0.0,
+      "evaluation_view": "principle",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 1024,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.0,
+        0.0037374040400176777
+      ]
+    },
+    {
+      "atom_type": "principle",
+      "cluster_bootstrap_95ci": [
+        0.9607609312890404,
+        0.9849517319704715
+      ],
+      "context_clusters": 587,
+      "estimate": 0.9735377626348666,
+      "evaluation_view": "principle",
+      "exposed_rows": 1001,
+      "row_rate": 0.9775390625,
+      "rows": 1024,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.9665214594321182,
+        0.9849871527249744
+      ]
+    },
+    {
+      "atom_type": "principle",
+      "cluster_bootstrap_95ci": [
+        0.96053378762067,
+        0.9846678023850085
+      ],
+      "context_clusters": 587,
+      "estimate": 0.9735377626348666,
+      "evaluation_view": "principle",
+      "exposed_rows": 1001,
+      "row_rate": 0.9775390625,
+      "rows": 1024,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.9665214594321182,
+        0.9849871527249744
+      ]
+    },
+    {
+      "atom_type": "principle",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 587,
+      "estimate": 0.0,
+      "evaluation_view": "principle",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 1024,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.0,
+        0.0037374040400176777
+      ]
+    },
+    {
+      "atom_type": "record",
+      "cluster_bootstrap_95ci": [
+        0.41928804656445207,
+        0.49727498580352064
+      ],
+      "context_clusters": 587,
+      "estimate": 0.45807306454665914,
+      "evaluation_view": "principle",
+      "exposed_rows": 498,
+      "row_rate": 0.486328125,
+      "rows": 1024,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.45582345322962275,
+        0.5169349914120966
+      ]
+    },
+    {
+      "atom_type": "record",
+      "cluster_bootstrap_95ci": [
+        0.4190703672155972,
+        0.4971039182282793
+      ],
+      "context_clusters": 587,
+      "estimate": 0.45807306454665914,
+      "evaluation_view": "principle",
+      "exposed_rows": 498,
+      "row_rate": 0.486328125,
+      "rows": 1024,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.45582345322962275,
+        0.5169349914120966
+      ]
+    },
+    {
+      "atom_type": "record",
+      "cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "context_clusters": 587,
+      "estimate": 0.0,
+      "evaluation_view": "principle",
+      "exposed_rows": 0,
+      "row_rate": 0.0,
+      "rows": 1024,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.0,
+        0.0037374040400176777
+      ]
+    },
+    {
+      "atom_type": "response",
+      "cluster_bootstrap_95ci": [
+        0.45775127768313456,
+        0.5383872799545713
+      ],
+      "context_clusters": 587,
+      "estimate": 0.4982112436115843,
+      "evaluation_view": "principle",
+      "exposed_rows": 551,
+      "row_rate": 0.5380859375,
+      "rows": 1024,
+      "scope": "same_view",
+      "wilson_95ci": [
+        0.5074649135212598,
+        0.5684222764053796
+      ]
+    },
+    {
+      "atom_type": "response",
+      "cluster_bootstrap_95ci": [
+        0.6179727427597955,
+        0.6950596252129472
+      ],
+      "context_clusters": 587,
+      "estimate": 0.6563032367972743,
+      "evaluation_view": "principle",
+      "exposed_rows": 695,
+      "row_rate": 0.6787109375,
+      "rows": 1024,
+      "scope": "any_view",
+      "wilson_95ci": [
+        0.649487227868092,
+        0.7065988171722924
+      ]
+    },
+    {
+      "atom_type": "response",
+      "cluster_bootstrap_95ci": [
+        0.1300113571834185,
+        0.18742262918796132
+      ],
+      "context_clusters": 587,
+      "estimate": 0.15809199318568992,
+      "evaluation_view": "principle",
+      "exposed_rows": 144,
+      "row_rate": 0.140625,
+      "rows": 1024,
+      "scope": "cross_view_only",
+      "wilson_95ci": [
+        0.12067334581716743,
+        0.16326291333659532
+      ]
+    }
+  ],
+  "primary_edit_quality_contrasts": {
+    "any_view_context_minus_same_view_record": {
+      "cluster_bootstrap_95ci": [
+        0.6871165644171779,
+        0.8159509202453987
+      ],
+      "context_clusters": 163,
+      "estimate": 0.754601226993865
+    },
+    "any_view_edit_link_minus_same_view_record": {
+      "cluster_bootstrap_95ci": [
+        0.558282208588957,
+        0.7055214723926381
+      ],
+      "context_clusters": 163,
+      "estimate": 0.6319018404907976
+    },
+    "any_view_feedback_minus_same_view_record": {
+      "cluster_bootstrap_95ci": [
+        0.588957055214724,
+        0.7361963190184049
+      ],
+      "context_clusters": 163,
+      "estimate": 0.6625766871165644
+    },
+    "any_view_response_minus_same_view_record": {
+      "cluster_bootstrap_95ci": [
+        0.6257668711656442,
+        0.7668711656441718
+      ],
+      "context_clusters": 163,
+      "estimate": 0.6993865030674846
+    },
+    "cross_view_only_context_minus_same_view_record": {
+      "cluster_bootstrap_95ci": [
+        0.6012269938650306,
+        0.7423312883435583
+      ],
+      "context_clusters": 163,
+      "estimate": 0.6748466257668712
+    }
+  },
+  "revision": "f6d145777bcbde96137596340fab89793acd1031",
+  "seed": 20260725
+}

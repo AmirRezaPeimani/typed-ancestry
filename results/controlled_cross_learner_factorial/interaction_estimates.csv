@@ -1,0 +1,3 @@
+comparison,display_name,estimand,estimate,ci_low,ci_high,uncertainty
+qwen_minus_word,Qwen minus word,difference_between_learner_did_estimates,-0.15852864583333334,-0.193359375,-0.12467447916666667,hierarchical paired context bootstrap
+qwen_minus_character,Qwen minus character,difference_between_learner_did_estimates,-0.08821614583333333,-0.1201171875,-0.056966145833333336,hierarchical paired context bootstrap

@@ -1,0 +1,20 @@
+{
+  "observational_reward_model": {
+    "model": "Qwen/Qwen2.5-0.5B",
+    "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+    "license": "Apache-2.0",
+    "role": "three-seed observational reward-model evaluator"
+  },
+  "frozen_semantic_encoder": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+    "license": "Apache-2.0",
+    "role": "semantic diagnostic and exploratory nearest-neighbor audit"
+  },
+  "final_construct_valid_neural_model": {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "license": "Apache-2.0",
+    "role": "final frozen construct-valid scalar reward-model experiment"
+  }
+}

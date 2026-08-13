@@ -1,0 +1,6 @@
+checkpoint_percent,pairs,correct,incorrect,exact_ties,tie_credit,tie_adjusted_accuracy,strict_accuracy,strict_wilson_95,scoring_rule
+20,400,249,149,2,0.5,0.625,0.6225,"[0.5740411128887363, 0.6686283749993612]","Correct=1, incorrect=0, exact score tie=0.5."
+40,400,295,104,1,0.5,0.73875,0.7375,"[0.6922684601360929, 0.7782132000551163]","Correct=1, incorrect=0, exact score tie=0.5."
+60,400,311,87,2,0.5,0.78,0.7775,"[0.7342089511162986, 0.8155117255281668]","Correct=1, incorrect=0, exact score tie=0.5."
+80,400,315,84,1,0.5,0.78875,0.7875,"[0.7447739406814162, 0.8247564900763633]","Correct=1, incorrect=0, exact score tie=0.5."
+100,400,317,82,1,0.5,0.79375,0.7925,"[0.7500694660392275, 0.829365841775209]","Correct=1, incorrect=0, exact score tie=0.5."

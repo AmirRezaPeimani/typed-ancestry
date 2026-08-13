@@ -1,0 +1,101 @@
+{
+  "factorial_estimates": [
+    {
+      "ci_high": 0.201171875,
+      "ci_low": 0.111328125,
+      "display_name": "Word TF-IDF",
+      "estimand": "target_minus_clean_difference_in_differences",
+      "estimate": 0.15625,
+      "learner": "controlled_word",
+      "nominal_seeds": 3,
+      "p_value": 4.999750012499375e-05,
+      "uncertainty_unit": "unique final prediction vector and paired evaluation context",
+      "unique_prediction_vectors": 1
+    },
+    {
+      "ci_high": 0.123046875,
+      "ci_low": 0.048828125,
+      "display_name": "Character TF-IDF",
+      "estimand": "target_minus_clean_difference_in_differences",
+      "estimate": 0.0859375,
+      "learner": "controlled_character",
+      "nominal_seeds": 3,
+      "p_value": 4.999750012499375e-05,
+      "uncertainty_unit": "unique final prediction vector and paired evaluation context",
+      "unique_prediction_vectors": 1
+    },
+    {
+      "ci_high": 0.0205078125,
+      "ci_low": -0.026692708333333332,
+      "display_name": "Qwen2.5-1.5B",
+      "estimand": "target_minus_clean_difference_in_differences",
+      "estimate": -0.0022786458333333335,
+      "learner": "controlled_neural",
+      "nominal_seeds": 3,
+      "p_value": 0.8169091545422729,
+      "uncertainty_unit": "unique final prediction vector and paired evaluation context",
+      "unique_prediction_vectors": 3
+    }
+  ],
+  "interaction_estimates": [
+    {
+      "ci_high": -0.12467447916666667,
+      "ci_low": -0.193359375,
+      "comparison": "qwen_minus_word",
+      "display_name": "Qwen minus word",
+      "estimand": "difference_between_learner_did_estimates",
+      "estimate": -0.15852864583333334,
+      "uncertainty": "hierarchical paired context bootstrap"
+    },
+    {
+      "ci_high": -0.056966145833333336,
+      "ci_low": -0.1201171875,
+      "comparison": "qwen_minus_character",
+      "display_name": "Qwen minus character",
+      "estimand": "difference_between_learner_did_estimates",
+      "estimate": -0.08821614583333333,
+      "uncertainty": "hierarchical paired context bootstrap"
+    }
+  ],
+  "interpretation_boundary": "Learner differences are bounded to the controlled representation and training protocol; sparse nominal seeds share one final prediction vector.",
+  "status": "complete",
+  "study": "controlled_cross_learner_factorial",
+  "untouched_estimates": [
+    {
+      "ci_high": 0.0390625,
+      "ci_low": -0.015625,
+      "display_name": "Word TF-IDF",
+      "estimand": "naive_minus_safe_untouched_accuracy",
+      "estimate": 0.01171875,
+      "learner": "controlled_word",
+      "nominal_seeds": 3,
+      "p_value": 0.4884755762211889,
+      "uncertainty_unit": "unique final prediction vector and paired evaluation context",
+      "unique_prediction_vectors": 1
+    },
+    {
+      "ci_high": 0.033203125,
+      "ci_low": -0.013671875,
+      "display_name": "Character TF-IDF",
+      "estimand": "naive_minus_safe_untouched_accuracy",
+      "estimate": 0.009765625,
+      "learner": "controlled_character",
+      "nominal_seeds": 3,
+      "p_value": 0.4989250537473126,
+      "uncertainty_unit": "unique final prediction vector and paired evaluation context",
+      "unique_prediction_vectors": 1
+    },
+    {
+      "ci_high": 0.0029296875,
+      "ci_low": -0.0283203125,
+      "display_name": "Qwen2.5-1.5B",
+      "estimand": "naive_minus_safe_untouched_accuracy",
+      "estimate": -0.012044270833333334,
+      "learner": "controlled_neural",
+      "nominal_seeds": 3,
+      "p_value": 0.05724713764311785,
+      "uncertainty_unit": "unique final prediction vector and paired evaluation context",
+      "unique_prediction_vectors": 3
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "dataset": "nvidia/HelpSteer3",
+  "dataset_revision": "f6d145777bcbde96137596340fab89793acd1031",
+  "license": "CC-BY-4.0",
+  "files": [
+    {"name": "preference_train.jsonl.gz", "repo_path": "preference/train.jsonl.gz", "view": "preference", "split": "train", "bytes": 106484475, "sha256": "32b52e1d378f8dab1e4c9ae549da49a5d6fc0875aeafe3f9139e6053beb906bb"},
+    {"name": "preference_validation.jsonl.gz", "repo_path": "preference/validation.jsonl.gz", "view": "preference", "split": "validation", "bytes": 5487516, "sha256": "cd0d8b6efd7869a44c1b5ff91701232062555829b3c838abfd770d7dab6c7861"},
+    {"name": "feedback_train.jsonl.gz", "repo_path": "feedback/train.jsonl.gz", "view": "feedback", "split": "train", "bytes": 101981681, "sha256": "6f51cf5b7224436b0c5a4c80b280eddc566f7d2b589f5a4be0ba7a3637f0519c"},
+    {"name": "feedback_validation.jsonl.gz", "repo_path": "feedback/validation.jsonl.gz", "view": "feedback", "split": "validation", "bytes": 5275463, "sha256": "b86f71581a83f610ec5416029422f84ff1fc005e77b56c7634486ef9f6f12ceb"},
+    {"name": "edit_train.jsonl.gz", "repo_path": "edit/train.jsonl.gz", "view": "edit", "split": "train", "bytes": 31734528, "sha256": "c0d4208ddedd1bb66845fd29ff8be2549e8dde7dda720af944bd9308df688df2"},
+    {"name": "edit_validation.jsonl.gz", "repo_path": "edit/validation.jsonl.gz", "view": "edit", "split": "validation", "bytes": 1690770, "sha256": "80ac8fa3d204e71778aa7a09e1f8050d247b758d85f8a6d27014757aaef8c74c"},
+    {"name": "principle_train.jsonl.gz", "repo_path": "principle/train.jsonl.gz", "view": "principle", "split": "train", "bytes": 42329308, "sha256": "9e0f5278a9ccca6886b67dd1c17ebfa61ef7dff2526ceb6ddce3624393ab5dcd"},
+    {"name": "principle_validation.jsonl.gz", "repo_path": "principle/validation.jsonl.gz", "view": "principle", "split": "validation", "bytes": 1187976, "sha256": "c4c14c23c24a780af643b903c7e9e8b1069c03308d02548d49b8bb1dc65d20e1"},
+    {"name": "edit_quality_train.jsonl.gz", "repo_path": "edit_quality/train.jsonl.gz", "view": "edit_quality", "split": "train", "bytes": 6959921, "sha256": "5df23b690d2d3fb8347d9fcf0e15f521d580a1d3347f68d4815b378a28ba0d1f"},
+    {"name": "edit_quality_validation.jsonl.gz", "repo_path": "edit_quality/validation.jsonl.gz", "view": "edit_quality", "split": "validation", "bytes": 352610, "sha256": "6c89444f8be151b62a0e0d9693d470fbd21ccd226c656fa788556ab650df8184"}
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "component_assignments_sha256": "4bfbade71cd6795c0fa92676568bda981991c4428e7bf1eeb9a09808b5287a52",
+  "files": {
+    "clean_validation_512.jsonl.gz": {
+      "content_sha256": "4ce6887a805f059863741256bb32aeabd29d247f240b9beddc8a93cd877d03af",
+      "rows": 512
+    },
+    "selector_train_1000.jsonl.gz": {
+      "content_sha256": "f8ba9bd1921b55edaebef2125fca47a0ec007ff69f1ea9f1b7894944647e5a50",
+      "rows": 1000
+    },
+    "retained_edit_base_3000.jsonl.gz": {
+      "content_sha256": "816eab66f21c5046951a91ea261ab7db69f4c8156d168c3cc1419f514dfd522c",
+      "rows": 3000
+    },
+    "target_512.jsonl.gz": {
+      "content_sha256": "b400a111322fed6d651f348137fa3f8bccfaaaf528c22217bae21d0e01b04508",
+      "rows": 512
+    },
+    "task_base_1000.jsonl.gz": {
+      "content_sha256": "f8ba9bd1921b55edaebef2125fca47a0ec007ff69f1ea9f1b7894944647e5a50",
+      "rows": 1000
+    },
+    "selector_development_400.jsonl.gz": {
+      "content_sha256": "3ad3192b487cfd44546cdbbfe5987964466daaddfb7cf3eefd8dc1a4b6100936",
+      "rows": 400
+    },
+    "train_naive_seed20260727.jsonl.gz": {
+      "content_sha256": "222e25494536bddc71ae375f0c727d8c4b81c1a5ff1925643e523dfbb8ccff38",
+      "rows": 4512
+    },
+    "train_naive_seed20260728.jsonl.gz": {
+      "content_sha256": "cbe997356ea1012ced6287eaee1bf5e1e175cb892fbd11420d506f06bd9622d8",
+      "rows": 4512
+    },
+    "train_naive_seed20260729.jsonl.gz": {
+      "content_sha256": "ed45b8ed549200cc5f123171eb8087e8240c659cf98d125148c1d81078578cc2",
+      "rows": 4512
+    },
+    "train_safe_seed20260727.jsonl.gz": {
+      "content_sha256": "9ee6146b70886bfb4b7947290ebf380d69bdd1486000a3cf7b87e4a53446e2b3",
+      "rows": 4512
+    },
+    "train_safe_seed20260728.jsonl.gz": {
+      "content_sha256": "5fbc55c5fdc93923dfa9a05ad66f30de2d5ae3d8bdcf746d43521acf1088a72b",
+      "rows": 4512
+    },
+    "train_safe_seed20260729.jsonl.gz": {
+      "content_sha256": "5481ad11f49411d478c43b5e85b5069acb51c0e953b2d57b29e68f336c01d120",
+      "rows": 4512
+    },
+    "untouched_clean_test_512.jsonl.gz": {
+      "content_sha256": "2a909e77bebea6204bc827e8ff6b07d83f6c65ff39aaa700dc9580f8a9815568",
+      "rows": 512
+    }
+  },
+  "hash_scope": "decompressed JSONL bytes",
+  "selection_seed": 20260801,
+  "source_sha256": "5df23b690d2d3fb8347d9fcf0e15f521d580a1d3347f68d4815b378a28ba0d1f",
+  "status": "complete"
+}

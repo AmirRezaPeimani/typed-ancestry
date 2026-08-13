@@ -1,0 +1,90 @@
+{
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 20260817,
+  "fractions": [
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "model_summaries": {
+    "minilm_frozen_bt": {
+      "competence": {
+        "all_margin_diagnostics_pass": true,
+        "complete_three_seed_grid": true,
+        "is_neural": false,
+        "meets_neural_competence_threshold": false,
+        "safe_final_untouched_accuracy_95ci": [
+          0.44921875,
+          0.53515625
+        ],
+        "safe_final_untouched_accuracy_by_seed": [
+          0.4921875,
+          0.4921875,
+          0.4921875
+        ],
+        "safe_final_untouched_accuracy_mean": 0.4921875
+      },
+      "final_did": 0.015625,
+      "final_did_95ci": [
+        -0.015625,
+        0.046875
+      ],
+      "final_did_by_seed": [
+        0.015625,
+        0.015625,
+        0.015625
+      ],
+      "final_did_two_sided_bootstrap_p": 0.3643,
+      "final_naive_minus_safe_untouched_accuracy": 0.017578125,
+      "first_checkpoint_at_or_above_5_points": null,
+      "meets_combined_reporting_criteria": false,
+      "same_direction_seed_count": 3,
+      "trajectory_auc": 0.010872395833333333,
+      "trajectory_mean_height": 0.013590494791666666
+    },
+    "word_tfidf_bt": {
+      "competence": {
+        "all_margin_diagnostics_pass": true,
+        "complete_three_seed_grid": true,
+        "is_neural": false,
+        "meets_neural_competence_threshold": false,
+        "safe_final_untouched_accuracy_95ci": [
+          0.416015625,
+          0.501953125
+        ],
+        "safe_final_untouched_accuracy_by_seed": [
+          0.458984375,
+          0.458984375,
+          0.458984375
+        ],
+        "safe_final_untouched_accuracy_mean": 0.458984375
+      },
+      "final_did": 0.142578125,
+      "final_did_95ci": [
+        0.1015625,
+        0.18359375
+      ],
+      "final_did_by_seed": [
+        0.142578125,
+        0.142578125,
+        0.142578125
+      ],
+      "final_did_two_sided_bootstrap_p": 0.0,
+      "final_naive_minus_safe_untouched_accuracy": 0.015625,
+      "first_checkpoint_at_or_above_5_points": 0.6,
+      "meets_combined_reporting_criteria": false,
+      "same_direction_seed_count": 3,
+      "trajectory_auc": 0.05703124999999999,
+      "trajectory_mean_height": 0.07128906249999999
+    }
+  },
+  "seeds": [
+    20260727,
+    20260728,
+    20260729
+  ],
+  "status": "complete",
+  "uncertainty_method": "paired context bootstrap with hierarchical resampling of training seeds; model interactions reuse the same draws"
+}

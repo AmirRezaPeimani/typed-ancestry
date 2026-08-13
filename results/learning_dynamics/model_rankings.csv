@@ -1,0 +1,17 @@
+boundary,evaluation_set,rank,model,mean_accuracy
+naive,target,1,word_tfidf_bt,0.64453125
+naive,target,2,minilm_frozen_bt,0.478515625
+naive,clean_validation,1,word_tfidf_bt,0.505859375
+naive,clean_validation,2,minilm_frozen_bt,0.47265625
+naive,untouched_clean_test,1,minilm_frozen_bt,0.509765625
+naive,untouched_clean_test,2,word_tfidf_bt,0.474609375
+naive,external,1,word_tfidf_bt,0.5376344086021505
+naive,external,2,minilm_frozen_bt,0.4650537634408602
+safe,target,1,word_tfidf_bt,0.498046875
+safe,target,2,minilm_frozen_bt,0.484375
+safe,clean_validation,1,word_tfidf_bt,0.501953125
+safe,clean_validation,2,minilm_frozen_bt,0.494140625
+safe,untouched_clean_test,1,minilm_frozen_bt,0.4921875
+safe,untouched_clean_test,2,word_tfidf_bt,0.458984375
+safe,external,1,word_tfidf_bt,0.5564516129032258
+safe,external,2,minilm_frozen_bt,0.4731182795698925

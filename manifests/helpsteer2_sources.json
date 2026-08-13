@@ -1,0 +1,14 @@
+{
+  "dataset": "nvidia/HelpSteer2",
+  "dataset_revision": "990b2711a36180dd19d9c94b8627844866f8982a",
+  "license": "CC-BY-4.0",
+  "files": [
+    {
+      "bytes": 581833,
+      "name": "validation.jsonl.gz",
+      "repo_path": "validation.jsonl.gz",
+      "sha256": "610eeb5289494d613c4c0f70aade2df8df0b499f3a24e76d232f74e6909d010a",
+      "split": "validation"
+    }
+  ]
+}

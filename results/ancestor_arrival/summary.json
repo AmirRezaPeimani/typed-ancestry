@@ -1,0 +1,309 @@
+{
+  "arrival_counts": {
+    "20260727": {
+      "0.2": 84,
+      "0.4": 171,
+      "0.6": 275,
+      "0.8": 386
+    },
+    "20260728": {
+      "0.2": 96,
+      "0.4": 200,
+      "0.6": 296,
+      "0.8": 403
+    },
+    "20260729": {
+      "0.2": 86,
+      "0.4": 184,
+      "0.6": 288,
+      "0.8": 404
+    }
+  },
+  "arrival_fractions": [
+    0.2,
+    0.4,
+    0.6,
+    0.8
+  ],
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 20260901,
+  "evaluation_inputs": [
+    {
+      "bytes": 919044,
+      "path": "${PROJECT_ROOT}/data/controlled_factorial/target_512.jsonl.gz",
+      "sha256": "7d07bb6133eb3ef19e250bf589c41a462c6029e537ec78c5e146f9656cf28d60"
+    },
+    {
+      "bytes": 890817,
+      "path": "${PROJECT_ROOT}/data/controlled_factorial/clean_validation_512.jsonl.gz",
+      "sha256": "f151d540b85c4b3502a0c6f03febd6a78d4d964bc9054f5a3e910d8fdf20063a"
+    },
+    {
+      "bytes": 5326,
+      "path": "${PROJECT_ROOT}/data/controlled_factorial/manifest.json",
+      "sha256": "8e0c4b6888846c92b890826f48d3902ca1176bcc3b45deee2f8a4b496161da2e"
+    }
+  ],
+  "model_summaries": {
+    "minilm_frozen_bt": {
+      "clean_placebo_correct_by_seed_and_checkpoint": [
+        [
+          0.02125055629728527,
+          0.017578158494966644,
+          0.020375911008822398,
+          0.013775803931244345
+        ],
+        [
+          -0.035256410256410256,
+          -0.019615384615384618,
+          -0.016016016016016016,
+          -0.004962779156327543
+        ],
+        [
+          0.01643192488262911,
+          -0.0037115588547189816,
+          0.027281746031746032,
+          -0.055005500550055
+        ]
+      ],
+      "clean_placebo_correct_mean_arrival_contrast": -0.0014894624001848848,
+      "clean_placebo_correct_mean_arrival_contrast_95ci": [
+        -0.03162751448997522,
+        0.029065394895288702
+      ],
+      "clean_placebo_margin_by_seed_and_checkpoint": [
+        [
+          -0.006985205897222557,
+          -0.006015840947565842,
+          -0.001207724224172771,
+          0.000311809727597632
+        ],
+        [
+          -0.00018367356160936012,
+          -0.004604539543154033,
+          -0.004516818328316125,
+          -0.0022273561020504447
+        ],
+        [
+          0.0031115939090694674,
+          0.005568788169597874,
+          0.010209417744646539,
+          0.0014741296063345648
+        ]
+      ],
+      "clean_placebo_margin_mean_arrival_contrast": -0.00042211828723708804,
+      "target_correct_by_seed_and_checkpoint": [
+        [
+          0.0522919448153093,
+          -3.4298845843837994e-05,
+          0.010326045262754123,
+          0.007772020725388601
+        ],
+        [
+          0.055288461538461536,
+          0.00282051282051282,
+          0.05267767767767768,
+          0.030004325357980286
+        ],
+        [
+          0.028059831859373295,
+          -0.0063626723223754005,
+          0.0183531746031746,
+          -0.025302530253025302
+        ]
+      ],
+      "target_correct_mean_arrival_contrast": 0.01882454110328231,
+      "target_correct_mean_arrival_contrast_95ci": [
+        -0.011394704682223734,
+        0.04805797625118088
+      ],
+      "target_correct_randomization_two_sided_p": 0.04374781260936953,
+      "target_margin_by_seed_and_checkpoint": [
+        [
+          0.018375840840277418,
+          0.019026450629492833,
+          0.022210239588965692,
+          0.01482127640405317
+        ],
+        [
+          0.018349183366645597,
+          0.01920447695883632,
+          0.023076731661609035,
+          0.026315075627963008
+        ],
+        [
+          0.019660143755277495,
+          0.016032341631728647,
+          0.009585493487500787,
+          0.013707852701998747
+        ]
+      ],
+      "target_margin_mean_arrival_contrast": 0.018363758887862396,
+      "target_margin_mean_arrival_contrast_95ci": [
+        0.011586829758872368,
+        0.025148245477694488
+      ],
+      "target_margin_randomization_two_sided_p": 4.999750012499375e-05,
+      "target_minus_placebo_correct_mean_contrast": 0.020314003503467196,
+      "target_minus_placebo_correct_mean_contrast_95ci": [
+        -0.024940554025400467,
+        0.06594391241125415
+      ]
+    },
+    "word_tfidf_bt": {
+      "clean_placebo_correct_by_seed_and_checkpoint": [
+        [
+          0.004672897196261682,
+          -0.017543859649122806,
+          0.0036363636363636364,
+          -0.002426186364010199
+        ],
+        [
+          0.004006410256410258,
+          0.004615384615384616,
+          0.016016016016016016,
+          0.025792792587702326
+        ],
+        [
+          0.027841467409105796,
+          -0.010074231177094384,
+          0.013392857142857142,
+          -0.01420975430876421
+        ]
+      ],
+      "clean_placebo_correct_mean_arrival_contrast": 0.004643346446759155,
+      "clean_placebo_correct_mean_arrival_contrast_95ci": [
+        -0.0182846881874978,
+        0.02815893423186412
+      ],
+      "clean_placebo_margin_by_seed_and_checkpoint": [
+        [
+          -0.0009245992339358728,
+          -0.000392481210964799,
+          0.001160367346808736,
+          0.006658505273086793
+        ],
+        [
+          -0.0009009419314528945,
+          -0.002217382974632069,
+          -0.0004379920054951009,
+          -0.0012915227124005596
+        ],
+        [
+          -0.0011580261704762338,
+          0.004346510301874262,
+          0.004097809843760147,
+          0.003442095472675941
+        ]
+      ],
+      "clean_placebo_margin_mean_arrival_contrast": 0.0010318618332373626,
+      "target_correct_by_seed_and_checkpoint": [
+        [
+          0.0926791277258567,
+          0.08185419560631785,
+          0.09090909090909091,
+          0.0956904350686734
+        ],
+        [
+          0.19791666666666666,
+          0.04,
+          0.0503003003003003,
+          0.10496960866892799
+        ],
+        [
+          0.15351020853805,
+          0.15323435843054084,
+          0.18948412698412698,
+          0.12999633296663
+        ]
+      ],
+      "target_correct_mean_arrival_contrast": 0.11504537098876513,
+      "target_correct_mean_arrival_contrast_95ci": [
+        0.07708800205200357,
+        0.16158090738578773
+      ],
+      "target_correct_randomization_two_sided_p": 4.999750012499375e-05,
+      "target_margin_by_seed_and_checkpoint": [
+        [
+          0.03823936696080298,
+          0.04353802565713338,
+          0.04634712021986485,
+          0.04489339023035565
+        ],
+        [
+          0.05204502736771366,
+          0.04287831523987569,
+          0.04542512759388498,
+          0.04913628313070084
+        ],
+        [
+          0.0433271619056174,
+          0.04663548629166109,
+          0.04248713964291102,
+          0.04285607046358573
+        ]
+      ],
+      "target_margin_mean_arrival_contrast": 0.044817376225342265,
+      "target_margin_mean_arrival_contrast_95ci": [
+        0.03928307972878638,
+        0.05068277756734695
+      ],
+      "target_margin_randomization_two_sided_p": 4.999750012499375e-05,
+      "target_minus_placebo_correct_mean_contrast": 0.11040202454200598,
+      "target_minus_placebo_correct_mean_contrast_95ci": [
+        0.06721178471647876,
+        0.1640411041770592
+      ]
+    }
+  },
+  "models": [
+    "word_tfidf_bt",
+    "minilm_frozen_bt"
+  ],
+  "prediction_inputs": [
+    {
+      "bytes": 3490346,
+      "model": "word_tfidf_bt",
+      "path": "${PROJECT_ROOT}/results/randomized_one_pass/word_predictions.csv.gz",
+      "sha256": "0c2b4feed5433e7c141d9dfd1368e4e4e64addf9e342fa0ca05201fe8eb54c02"
+    },
+    {
+      "bytes": 3504863,
+      "model": "minilm_frozen_bt",
+      "path": "${PROJECT_ROOT}/results/randomized_one_pass/minilm_predictions.csv.gz",
+      "sha256": "9a2d7106ace364fdeb4cfa3174cbbcf924cc37d57a692abadec3693dc2dde509"
+    }
+  ],
+  "processed_rows_by_fraction": {
+    "0.2": 902,
+    "0.4": 1805,
+    "0.6": 2707,
+    "0.8": 3610,
+    "1.0": 4512
+  },
+  "randomization_replicates": 20000,
+  "randomization_seed": 20260903,
+  "seeds": [
+    20260727,
+    20260728,
+    20260729
+  ],
+  "status": "complete",
+  "training_inputs": [
+    {
+      "bytes": 8332138,
+      "path": "${PROJECT_ROOT}/data/controlled_factorial/train_naive_seed20260727.jsonl.gz",
+      "sha256": "a7d4b584c5d05fd67e3f0a1fc487920286af47bcc58e1c9e60827d3d0b477d4c"
+    },
+    {
+      "bytes": 8332116,
+      "path": "${PROJECT_ROOT}/data/controlled_factorial/train_naive_seed20260728.jsonl.gz",
+      "sha256": "abf79cc663407d3cb6908dfb2d20cc310c4d8303af3813cb6cd9b645ec926338"
+    },
+    {
+      "bytes": 8334507,
+      "path": "${PROJECT_ROOT}/data/controlled_factorial/train_naive_seed20260729.jsonl.gz",
+      "sha256": "59e67c1f4ea1bb854e36f00e5c4073a48dbfb210fa45724e8eedaa2d43d09fd1"
+    }
+  ]
+}

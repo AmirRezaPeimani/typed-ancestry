@@ -1,0 +1,459 @@
+{
+  "models": {
+    "controlled_character": {
+      "accuracy_rows": [
+        {
+          "accuracy": 0.69921875,
+          "boundary": "naive",
+          "evaluation_set": "target",
+          "seed": 20260727
+        },
+        {
+          "accuracy": 0.59765625,
+          "boundary": "naive",
+          "evaluation_set": "clean_validation",
+          "seed": 20260727
+        },
+        {
+          "accuracy": 0.580078125,
+          "boundary": "naive",
+          "evaluation_set": "untouched_clean_test",
+          "seed": 20260727
+        },
+        {
+          "accuracy": 0.60546875,
+          "boundary": "safe",
+          "evaluation_set": "target",
+          "seed": 20260727
+        },
+        {
+          "accuracy": 0.58984375,
+          "boundary": "safe",
+          "evaluation_set": "clean_validation",
+          "seed": 20260727
+        },
+        {
+          "accuracy": 0.5703125,
+          "boundary": "safe",
+          "evaluation_set": "untouched_clean_test",
+          "seed": 20260727
+        },
+        {
+          "accuracy": 0.69921875,
+          "boundary": "naive",
+          "evaluation_set": "target",
+          "seed": 20260728
+        },
+        {
+          "accuracy": 0.59765625,
+          "boundary": "naive",
+          "evaluation_set": "clean_validation",
+          "seed": 20260728
+        },
+        {
+          "accuracy": 0.580078125,
+          "boundary": "naive",
+          "evaluation_set": "untouched_clean_test",
+          "seed": 20260728
+        },
+        {
+          "accuracy": 0.60546875,
+          "boundary": "safe",
+          "evaluation_set": "target",
+          "seed": 20260728
+        },
+        {
+          "accuracy": 0.58984375,
+          "boundary": "safe",
+          "evaluation_set": "clean_validation",
+          "seed": 20260728
+        },
+        {
+          "accuracy": 0.5703125,
+          "boundary": "safe",
+          "evaluation_set": "untouched_clean_test",
+          "seed": 20260728
+        },
+        {
+          "accuracy": 0.69921875,
+          "boundary": "naive",
+          "evaluation_set": "target",
+          "seed": 20260729
+        },
+        {
+          "accuracy": 0.59765625,
+          "boundary": "naive",
+          "evaluation_set": "clean_validation",
+          "seed": 20260729
+        },
+        {
+          "accuracy": 0.580078125,
+          "boundary": "naive",
+          "evaluation_set": "untouched_clean_test",
+          "seed": 20260729
+        },
+        {
+          "accuracy": 0.60546875,
+          "boundary": "safe",
+          "evaluation_set": "target",
+          "seed": 20260729
+        },
+        {
+          "accuracy": 0.58984375,
+          "boundary": "safe",
+          "evaluation_set": "clean_validation",
+          "seed": 20260729
+        },
+        {
+          "accuracy": 0.5703125,
+          "boundary": "safe",
+          "evaluation_set": "untouched_clean_test",
+          "seed": 20260729
+        }
+      ],
+      "accuracy_summary": [
+        {
+          "accuracy": 0.69921875,
+          "boundary": "naive",
+          "evaluation_set": "target",
+          "hierarchical_bootstrap_95": [
+            0.66015625,
+            0.73828125
+          ]
+        },
+        {
+          "accuracy": 0.59765625,
+          "boundary": "naive",
+          "evaluation_set": "clean_validation",
+          "hierarchical_bootstrap_95": [
+            0.5546875,
+            0.640625
+          ]
+        },
+        {
+          "accuracy": 0.580078125,
+          "boundary": "naive",
+          "evaluation_set": "untouched_clean_test",
+          "hierarchical_bootstrap_95": [
+            0.537109375,
+            0.62109375
+          ]
+        },
+        {
+          "accuracy": 0.60546875,
+          "boundary": "safe",
+          "evaluation_set": "target",
+          "hierarchical_bootstrap_95": [
+            0.5625,
+            0.646484375
+          ]
+        },
+        {
+          "accuracy": 0.58984375,
+          "boundary": "safe",
+          "evaluation_set": "clean_validation",
+          "hierarchical_bootstrap_95": [
+            0.546875,
+            0.6328125
+          ]
+        },
+        {
+          "accuracy": 0.5703125,
+          "boundary": "safe",
+          "evaluation_set": "untouched_clean_test",
+          "hierarchical_bootstrap_95": [
+            0.52734375,
+            0.61328125
+          ]
+        }
+      ],
+      "display_name": "Character TF-IDF",
+      "nominal_seeds": [
+        20260727,
+        20260728,
+        20260729
+      ],
+      "prediction_vector_seed_groups": {
+        "20260727": [
+          20260727,
+          20260728,
+          20260729
+        ]
+      },
+      "primary": {
+        "bootstrap_seed": 20261022,
+        "difference_in_differences": 0.0859375,
+        "estimand": "(target naive-safe accuracy gap) minus (clean-validation naive-safe accuracy gap)",
+        "hierarchical_bootstrap_95": [
+          0.048828125,
+          0.123046875
+        ],
+        "paired_sign_randomization_two_sided_p": 4.999750012499375e-05,
+        "randomization_seed": 20261023,
+        "replicates": 20000
+      },
+      "seed_effects": [
+        {
+          "clean_naive_minus_safe": 0.0078125,
+          "difference_in_differences": 0.0859375,
+          "seed": 20260727,
+          "target_naive_minus_safe": 0.09375,
+          "untouched_naive_minus_safe": 0.009765625
+        },
+        {
+          "clean_naive_minus_safe": 0.0078125,
+          "difference_in_differences": 0.0859375,
+          "seed": 20260728,
+          "target_naive_minus_safe": 0.09375,
+          "untouched_naive_minus_safe": 0.009765625
+        },
+        {
+          "clean_naive_minus_safe": 0.0078125,
+          "difference_in_differences": 0.0859375,
+          "seed": 20260729,
+          "target_naive_minus_safe": 0.09375,
+          "untouched_naive_minus_safe": 0.009765625
+        }
+      ],
+      "uncertainty_unit": "unique final prediction vector and paired evaluation context",
+      "unique_prediction_vectors": 1,
+      "untouched_clean_consequence": {
+        "hierarchical_bootstrap_95": [
+          -0.013671875,
+          0.033203125
+        ],
+        "naive_minus_safe_accuracy": 0.009765625,
+        "paired_sign_randomization_two_sided_p": 0.4989250537473126
+      }
+    },
+    "controlled_word": {
+      "accuracy_rows": [
+        {
+          "accuracy": 0.705078125,
+          "boundary": "naive",
+          "evaluation_set": "target",
+          "seed": 20260727
+        },
+        {
+          "accuracy": 0.513671875,
+          "boundary": "naive",
+          "evaluation_set": "clean_validation",
+          "seed": 20260727
+        },
+        {
+          "accuracy": 0.50390625,
+          "boundary": "naive",
+          "evaluation_set": "untouched_clean_test",
+          "seed": 20260727
+        },
+        {
+          "accuracy": 0.541015625,
+          "boundary": "safe",
+          "evaluation_set": "target",
+          "seed": 20260727
+        },
+        {
+          "accuracy": 0.505859375,
+          "boundary": "safe",
+          "evaluation_set": "clean_validation",
+          "seed": 20260727
+        },
+        {
+          "accuracy": 0.4921875,
+          "boundary": "safe",
+          "evaluation_set": "untouched_clean_test",
+          "seed": 20260727
+        },
+        {
+          "accuracy": 0.705078125,
+          "boundary": "naive",
+          "evaluation_set": "target",
+          "seed": 20260728
+        },
+        {
+          "accuracy": 0.513671875,
+          "boundary": "naive",
+          "evaluation_set": "clean_validation",
+          "seed": 20260728
+        },
+        {
+          "accuracy": 0.50390625,
+          "boundary": "naive",
+          "evaluation_set": "untouched_clean_test",
+          "seed": 20260728
+        },
+        {
+          "accuracy": 0.541015625,
+          "boundary": "safe",
+          "evaluation_set": "target",
+          "seed": 20260728
+        },
+        {
+          "accuracy": 0.505859375,
+          "boundary": "safe",
+          "evaluation_set": "clean_validation",
+          "seed": 20260728
+        },
+        {
+          "accuracy": 0.4921875,
+          "boundary": "safe",
+          "evaluation_set": "untouched_clean_test",
+          "seed": 20260728
+        },
+        {
+          "accuracy": 0.705078125,
+          "boundary": "naive",
+          "evaluation_set": "target",
+          "seed": 20260729
+        },
+        {
+          "accuracy": 0.513671875,
+          "boundary": "naive",
+          "evaluation_set": "clean_validation",
+          "seed": 20260729
+        },
+        {
+          "accuracy": 0.50390625,
+          "boundary": "naive",
+          "evaluation_set": "untouched_clean_test",
+          "seed": 20260729
+        },
+        {
+          "accuracy": 0.541015625,
+          "boundary": "safe",
+          "evaluation_set": "target",
+          "seed": 20260729
+        },
+        {
+          "accuracy": 0.505859375,
+          "boundary": "safe",
+          "evaluation_set": "clean_validation",
+          "seed": 20260729
+        },
+        {
+          "accuracy": 0.4921875,
+          "boundary": "safe",
+          "evaluation_set": "untouched_clean_test",
+          "seed": 20260729
+        }
+      ],
+      "accuracy_summary": [
+        {
+          "accuracy": 0.705078125,
+          "boundary": "naive",
+          "evaluation_set": "target",
+          "hierarchical_bootstrap_95": [
+            0.666015625,
+            0.744140625
+          ]
+        },
+        {
+          "accuracy": 0.513671875,
+          "boundary": "naive",
+          "evaluation_set": "clean_validation",
+          "hierarchical_bootstrap_95": [
+            0.470703125,
+            0.556640625
+          ]
+        },
+        {
+          "accuracy": 0.50390625,
+          "boundary": "naive",
+          "evaluation_set": "untouched_clean_test",
+          "hierarchical_bootstrap_95": [
+            0.4609375,
+            0.546875
+          ]
+        },
+        {
+          "accuracy": 0.541015625,
+          "boundary": "safe",
+          "evaluation_set": "target",
+          "hierarchical_bootstrap_95": [
+            0.498046875,
+            0.583984375
+          ]
+        },
+        {
+          "accuracy": 0.505859375,
+          "boundary": "safe",
+          "evaluation_set": "clean_validation",
+          "hierarchical_bootstrap_95": [
+            0.462890625,
+            0.548828125
+          ]
+        },
+        {
+          "accuracy": 0.4921875,
+          "boundary": "safe",
+          "evaluation_set": "untouched_clean_test",
+          "hierarchical_bootstrap_95": [
+            0.44921875,
+            0.53515625
+          ]
+        }
+      ],
+      "display_name": "Word TF-IDF",
+      "nominal_seeds": [
+        20260727,
+        20260728,
+        20260729
+      ],
+      "prediction_vector_seed_groups": {
+        "20260727": [
+          20260727,
+          20260728,
+          20260729
+        ]
+      },
+      "primary": {
+        "bootstrap_seed": 20261021,
+        "difference_in_differences": 0.15625,
+        "estimand": "(target naive-safe accuracy gap) minus (clean-validation naive-safe accuracy gap)",
+        "hierarchical_bootstrap_95": [
+          0.111328125,
+          0.201171875
+        ],
+        "paired_sign_randomization_two_sided_p": 4.999750012499375e-05,
+        "randomization_seed": 20261022,
+        "replicates": 20000
+      },
+      "seed_effects": [
+        {
+          "clean_naive_minus_safe": 0.0078125,
+          "difference_in_differences": 0.15625,
+          "seed": 20260727,
+          "target_naive_minus_safe": 0.1640625,
+          "untouched_naive_minus_safe": 0.01171875
+        },
+        {
+          "clean_naive_minus_safe": 0.0078125,
+          "difference_in_differences": 0.15625,
+          "seed": 20260728,
+          "target_naive_minus_safe": 0.1640625,
+          "untouched_naive_minus_safe": 0.01171875
+        },
+        {
+          "clean_naive_minus_safe": 0.0078125,
+          "difference_in_differences": 0.15625,
+          "seed": 20260729,
+          "target_naive_minus_safe": 0.1640625,
+          "untouched_naive_minus_safe": 0.01171875
+        }
+      ],
+      "uncertainty_unit": "unique final prediction vector and paired evaluation context",
+      "unique_prediction_vectors": 1,
+      "untouched_clean_consequence": {
+        "hierarchical_bootstrap_95": [
+          -0.015625,
+          0.0390625
+        ],
+        "naive_minus_safe_accuracy": 0.01171875,
+        "paired_sign_randomization_two_sided_p": 0.4884755762211889
+      }
+    }
+  },
+  "source_sha256": "4b81a5f2812a4e3ece52b2c6db231576509c46ed450eadf7d537ac328d83f3da",
+  "status": "complete",
+  "study": "controlled_sparse_factorial"
+}

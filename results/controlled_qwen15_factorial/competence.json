@@ -1,0 +1,14 @@
+{
+  "correct": 317,
+  "exact_ties": 1,
+  "incorrect": 82,
+  "pairs": 400,
+  "scoring_rule": "Correct=1, incorrect=0, exact score tie=0.5.",
+  "strict_accuracy": 0.7925,
+  "strict_wilson_95": [
+    0.7500694660392275,
+    0.829365841775209
+  ],
+  "tie_adjusted_accuracy": 0.79375,
+  "tie_credit": 0.5
+}

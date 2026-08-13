@@ -1,0 +1,8 @@
+{
+  "selected_checkpoint_fraction": 100,
+  "selection_data": "ancestry-disjoint development",
+  "selector_development_pairs": 400,
+  "selector_seed": 20260801,
+  "selector_training_pairs": 1000,
+  "status": "selected"
+}

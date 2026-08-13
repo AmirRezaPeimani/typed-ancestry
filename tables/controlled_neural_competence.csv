@@ -1,0 +1,2 @@
+pairs,correct,incorrect,exact_ties,tie_credit,tie_adjusted_accuracy,strict_accuracy,strict_wilson_95,scoring_rule,strict_wilson_low,strict_wilson_high
+400,317,82,1,0.5,0.79375,0.7925,"[0.7500694660392275, 0.829365841775209]","Correct=1, incorrect=0, exact score tie=0.5.",0.7500694660392275,0.829365841775209

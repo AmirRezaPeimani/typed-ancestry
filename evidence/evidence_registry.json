@@ -1,0 +1,280 @@
+{
+  "claims": [
+    {
+      "claim": "The controlled target-minus-clean distortion is positive for the two sparse learners.",
+      "claim_id": "controlled_sparse_distortion",
+      "evidence": [
+        {
+          "bytes": 12608,
+          "path": "results/controlled_sparse_factorial/summary.json",
+          "role": "point estimates and intervals",
+          "sha256": "633923b4c4969707e88279dcb7ac26600c43d8fc3de01df2b9060ee7c68cc8b9"
+        },
+        {
+          "bytes": 5562314,
+          "path": "results/controlled_sparse_factorial/predictions.csv.gz",
+          "role": "row-level saved predictions",
+          "sha256": "d9637069bdd2c6d80d0e67f8949313a609259afce202ef798c0f97822a8f3425"
+        },
+        {
+          "bytes": 733,
+          "path": "tables/controlled_cross_learner_factorial.csv",
+          "role": "table-ready estimates",
+          "sha256": "4452c983e23d26b82223c09622db42b3f932699065cb488c75c65179c4a65e56"
+        }
+      ]
+    },
+    {
+      "claim": "The controlled Qwen estimate is near zero and differs from both sparse learner estimates under the fixed protocol.",
+      "claim_id": "controlled_neural_null",
+      "evidence": [
+        {
+          "bytes": 6696,
+          "path": "results/controlled_qwen15_factorial/summary.json",
+          "role": "point estimate, interval, and interactions",
+          "sha256": "e671cf3898b0f6512d282f6802e66986b591b176bfe07571808f072f84906cf0"
+        },
+        {
+          "bytes": 450860,
+          "path": "results/controlled_qwen15_factorial/predictions.csv.gz",
+          "role": "three-seed row-level saved predictions",
+          "sha256": "0390092d5daa743e1ee15770afb2d59592a7bd097eb8abd56194a79676b1d8a1"
+        },
+        {
+          "bytes": 413,
+          "path": "tables/controlled_learner_interactions.csv",
+          "role": "table-ready interaction estimates",
+          "sha256": "a4af4d422868445dbb19e3309a456e1ecd079ca10c1104734e43b406dd6c57a2"
+        },
+        {
+          "bytes": 33510,
+          "path": "figures/controlled_cross_learner_factorial_main.pdf",
+          "role": "publication figure",
+          "sha256": "d900ba0a8b61ec2db2ae83b03cb06cc6a641d780587261d7ce4980969c4dd0a5"
+        }
+      ]
+    },
+    {
+      "claim": "The selected checkpoint scored 317 correct, 82 incorrect, and one exact tie on 400 pairs: 79.38% with half tie credit and 79.25% strictly.",
+      "claim_id": "neural_competence_scoring",
+      "evidence": [
+        {
+          "bytes": 40467,
+          "path": "results/controlled_qwen15_factorial/competence_predictions.csv",
+          "role": "all 400 scored pairs",
+          "sha256": "4214b207cc2fd8e585875cf96a276bd8807d408daed1145378b9ff6bda57e8da"
+        },
+        {
+          "bytes": 302,
+          "path": "results/controlled_qwen15_factorial/competence.json",
+          "role": "explicit scoring summary",
+          "sha256": "7320535524127fbe5dd1e41cfbd83f6499d7a09a01a7921c7b18dd7c0c9a3f4c"
+        },
+        {
+          "bytes": 309,
+          "path": "tables/controlled_neural_competence.csv",
+          "role": "table-ready scoring summary",
+          "sha256": "fa45f9851e9defb56063083c04462b63e7249dbc8754ba6d69fbc7fd77cd353b"
+        },
+        {
+          "bytes": 1301,
+          "path": "macros/controlled_neural_macros.tex",
+          "role": "paper value macros",
+          "sha256": "9f48c925b62a85627c6925fee5d53d8350a8ed2f9466b0344087ec2d5ae82954"
+        }
+      ]
+    },
+    {
+      "claim": "Typed exposure is stable under the audited exact normalizations, while exposed and clean validation select different predefined candidates.",
+      "claim_id": "normalization_and_selection",
+      "evidence": [
+        {
+          "bytes": 1551,
+          "path": "results/ancestry_robustness/normalization_results.csv",
+          "role": "normalization sensitivity rows",
+          "sha256": "c3be22afc5d089cdb5e1ba27a31cd117bff60fd73f4b2f13b3e95acabc5ef93b"
+        },
+        {
+          "bytes": 937,
+          "path": "results/model_selection/development_candidates.csv",
+          "role": "candidate validation scores",
+          "sha256": "9d4a38361a1831e490473226d4c4e495883b77bc1ee45a84f15898ead8d65c40"
+        },
+        {
+          "bytes": 1699,
+          "path": "results/model_selection/uncertainty_validation.json",
+          "role": "held-out uncertainty audit",
+          "sha256": "7fae589983eb2f2c765bb23f4bffdd8950ecb8d628f91a347f33da57c960e6ea"
+        },
+        {
+          "bytes": 30652,
+          "path": "figures/candidate_selection_main.pdf",
+          "role": "prospective candidate-selection figure",
+          "sha256": "7941f7161b29bfb6c23972b2541153eb346b4dcb1ef4cf1e18b9518c9c48f3af"
+        },
+        {
+          "bytes": 35456,
+          "path": "figures/candidate_selection_supp.pdf",
+          "role": "post hoc validation-objective sensitivity figure",
+          "sha256": "6cab9d521871f8976c2a5f054fda9a130712a9de1cc9040961b37c42a9c92865"
+        }
+      ]
+    },
+    {
+      "claim": "The lexical boundary effect grows over training and the randomized-arrival analysis separates target ancestry from a clean placebo contrast.",
+      "claim_id": "learning_dynamics",
+      "evidence": [
+        {
+          "bytes": 1153,
+          "path": "results/learning_dynamics/learning_dynamics.csv",
+          "role": "checkpoint-level estimates",
+          "sha256": "ef81e258c04d9494e22f7a4c45a763548c811fb386ba2b08648870244ff2cd6f"
+        },
+        {
+          "bytes": 8669,
+          "path": "results/ancestor_arrival/summary.json",
+          "role": "randomized-arrival estimates",
+          "sha256": "ef3e8fe514dd0c61866121a4eca07b955510665aba4356907bae87c429b373cd"
+        },
+        {
+          "bytes": 43048,
+          "path": "figures/learning_dynamics_main.pdf",
+          "role": "typed-boundary measurement figure",
+          "sha256": "5caa3a2dbda86fd8618bf7ef2f3db4ae027092319673b4838588f1f436e75984"
+        },
+        {
+          "bytes": 37574,
+          "path": "figures/learning_dynamics_acquisition.pdf",
+          "role": "controlled acquisition figure",
+          "sha256": "d6c599c0ece75de6de05fae09f3e00589a104cca1fdcbd941ac7b720684c795d"
+        },
+        {
+          "bytes": 655,
+          "path": "results/ancestor_arrival/event_aligned_estimates.csv",
+          "role": "event-aligned estimates",
+          "sha256": "1521ea0d9971a3118449e6c6d08817f5633112f0ede8e4cd2f9afbee5dc6468e"
+        }
+      ]
+    },
+    {
+      "claim": "The controlled design holds the shared base and evaluation sets fixed while replacing a 512-pair ancestor block with a component-disjoint filler block.",
+      "claim_id": "dataset_design",
+      "evidence": [
+        {
+          "bytes": 717,
+          "path": "tables/dataset_split_design.csv",
+          "role": "table-ready split design",
+          "sha256": "5943a70ed631565d0b671e9bd6058139ecead8daa95e6542962bf456826e2186"
+        },
+        {
+          "bytes": 3220,
+          "path": "results/dataset_design/summary.json",
+          "role": "assignment counts and data hashes",
+          "sha256": "ab8fdf123acf2e301901e4fa32f433ce01d8130713514793cb542991f810abe5"
+        },
+        {
+          "bytes": 43048,
+          "path": "figures/learning_dynamics_main.pdf",
+          "role": "typed-ancestry design and exposure figure",
+          "sha256": "5caa3a2dbda86fd8618bf7ef2f3db4ae027092319673b4838588f1f436e75984"
+        }
+      ]
+    }
+  ],
+  "files": {
+    "figures/candidate_selection_main.pdf": {
+      "bytes": 30652,
+      "sha256": "7941f7161b29bfb6c23972b2541153eb346b4dcb1ef4cf1e18b9518c9c48f3af"
+    },
+    "figures/candidate_selection_supp.pdf": {
+      "bytes": 35456,
+      "sha256": "6cab9d521871f8976c2a5f054fda9a130712a9de1cc9040961b37c42a9c92865"
+    },
+    "figures/controlled_cross_learner_factorial_main.pdf": {
+      "bytes": 33510,
+      "sha256": "d900ba0a8b61ec2db2ae83b03cb06cc6a641d780587261d7ce4980969c4dd0a5"
+    },
+    "figures/learning_dynamics_acquisition.pdf": {
+      "bytes": 37574,
+      "sha256": "d6c599c0ece75de6de05fae09f3e00589a104cca1fdcbd941ac7b720684c795d"
+    },
+    "figures/learning_dynamics_main.pdf": {
+      "bytes": 43048,
+      "sha256": "5caa3a2dbda86fd8618bf7ef2f3db4ae027092319673b4838588f1f436e75984"
+    },
+    "macros/controlled_neural_macros.tex": {
+      "bytes": 1301,
+      "sha256": "9f48c925b62a85627c6925fee5d53d8350a8ed2f9466b0344087ec2d5ae82954"
+    },
+    "results/ancestor_arrival/event_aligned_estimates.csv": {
+      "bytes": 655,
+      "sha256": "1521ea0d9971a3118449e6c6d08817f5633112f0ede8e4cd2f9afbee5dc6468e"
+    },
+    "results/ancestor_arrival/summary.json": {
+      "bytes": 8669,
+      "sha256": "ef3e8fe514dd0c61866121a4eca07b955510665aba4356907bae87c429b373cd"
+    },
+    "results/ancestry_robustness/normalization_results.csv": {
+      "bytes": 1551,
+      "sha256": "c3be22afc5d089cdb5e1ba27a31cd117bff60fd73f4b2f13b3e95acabc5ef93b"
+    },
+    "results/controlled_qwen15_factorial/competence.json": {
+      "bytes": 302,
+      "sha256": "7320535524127fbe5dd1e41cfbd83f6499d7a09a01a7921c7b18dd7c0c9a3f4c"
+    },
+    "results/controlled_qwen15_factorial/competence_predictions.csv": {
+      "bytes": 40467,
+      "sha256": "4214b207cc2fd8e585875cf96a276bd8807d408daed1145378b9ff6bda57e8da"
+    },
+    "results/controlled_qwen15_factorial/predictions.csv.gz": {
+      "bytes": 450860,
+      "sha256": "0390092d5daa743e1ee15770afb2d59592a7bd097eb8abd56194a79676b1d8a1"
+    },
+    "results/controlled_qwen15_factorial/summary.json": {
+      "bytes": 6696,
+      "sha256": "e671cf3898b0f6512d282f6802e66986b591b176bfe07571808f072f84906cf0"
+    },
+    "results/controlled_sparse_factorial/predictions.csv.gz": {
+      "bytes": 5562314,
+      "sha256": "d9637069bdd2c6d80d0e67f8949313a609259afce202ef798c0f97822a8f3425"
+    },
+    "results/controlled_sparse_factorial/summary.json": {
+      "bytes": 12608,
+      "sha256": "633923b4c4969707e88279dcb7ac26600c43d8fc3de01df2b9060ee7c68cc8b9"
+    },
+    "results/dataset_design/summary.json": {
+      "bytes": 3220,
+      "sha256": "ab8fdf123acf2e301901e4fa32f433ce01d8130713514793cb542991f810abe5"
+    },
+    "results/learning_dynamics/learning_dynamics.csv": {
+      "bytes": 1153,
+      "sha256": "ef81e258c04d9494e22f7a4c45a763548c811fb386ba2b08648870244ff2cd6f"
+    },
+    "results/model_selection/development_candidates.csv": {
+      "bytes": 937,
+      "sha256": "9d4a38361a1831e490473226d4c4e495883b77bc1ee45a84f15898ead8d65c40"
+    },
+    "results/model_selection/uncertainty_validation.json": {
+      "bytes": 1699,
+      "sha256": "7fae589983eb2f2c765bb23f4bffdd8950ecb8d628f91a347f33da57c960e6ea"
+    },
+    "tables/controlled_cross_learner_factorial.csv": {
+      "bytes": 733,
+      "sha256": "4452c983e23d26b82223c09622db42b3f932699065cb488c75c65179c4a65e56"
+    },
+    "tables/controlled_learner_interactions.csv": {
+      "bytes": 413,
+      "sha256": "a4af4d422868445dbb19e3309a456e1ecd079ca10c1104734e43b406dd6c57a2"
+    },
+    "tables/controlled_neural_competence.csv": {
+      "bytes": 309,
+      "sha256": "fa45f9851e9defb56063083c04462b63e7249dbc8754ba6d69fbc7fd77cd353b"
+    },
+    "tables/dataset_split_design.csv": {
+      "bytes": 717,
+      "sha256": "5943a70ed631565d0b671e9bd6058139ecead8daa95e6542962bf456826e2186"
+    }
+  },
+  "path_policy": "All paths are relative to the artifact root.",
+  "status": "complete"
+}

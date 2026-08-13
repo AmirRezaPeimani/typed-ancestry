@@ -1,0 +1,8 @@
+split,role,pairs,ancestry_relation,used_for_selection
+shared_training_base,common training examples in both boundaries,4000,none to evaluation assignments,no
+naive_ancestor_block,boundary-specific training block,512,ancestor of target validation pairs,no
+safe_filler_block,size-matched boundary-specific training block,512,component-disjoint filler,no
+target_validation,exposure-sensitive validation view,512,descends from the naive ancestor block,yes
+clean_validation,ancestry-clean validation control,512,component-disjoint from both boundaries,yes
+untouched_clean_test,held-out downstream evaluation,512,component-disjoint and untouched,no
+external_helpsteer2,external comparison set,372,separate public corpus,no

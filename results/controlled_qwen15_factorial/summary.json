@@ -1,0 +1,268 @@
+{
+  "accuracy_rows": [
+    {
+      "accuracy": 0.65234375,
+      "boundary": "naive",
+      "evaluation_set": "target",
+      "seed": 20260727
+    },
+    {
+      "accuracy": 0.6943359375,
+      "boundary": "naive",
+      "evaluation_set": "clean_validation",
+      "seed": 20260727
+    },
+    {
+      "accuracy": 0.6748046875,
+      "boundary": "naive",
+      "evaluation_set": "untouched_clean_test",
+      "seed": 20260727
+    },
+    {
+      "accuracy": 0.693359375,
+      "boundary": "safe",
+      "evaluation_set": "target",
+      "seed": 20260727
+    },
+    {
+      "accuracy": 0.720703125,
+      "boundary": "safe",
+      "evaluation_set": "clean_validation",
+      "seed": 20260727
+    },
+    {
+      "accuracy": 0.6962890625,
+      "boundary": "safe",
+      "evaluation_set": "untouched_clean_test",
+      "seed": 20260727
+    },
+    {
+      "accuracy": 0.703125,
+      "boundary": "naive",
+      "evaluation_set": "target",
+      "seed": 20260728
+    },
+    {
+      "accuracy": 0.71484375,
+      "boundary": "naive",
+      "evaluation_set": "clean_validation",
+      "seed": 20260728
+    },
+    {
+      "accuracy": 0.7314453125,
+      "boundary": "naive",
+      "evaluation_set": "untouched_clean_test",
+      "seed": 20260728
+    },
+    {
+      "accuracy": 0.703125,
+      "boundary": "safe",
+      "evaluation_set": "target",
+      "seed": 20260728
+    },
+    {
+      "accuracy": 0.708984375,
+      "boundary": "safe",
+      "evaluation_set": "clean_validation",
+      "seed": 20260728
+    },
+    {
+      "accuracy": 0.734375,
+      "boundary": "safe",
+      "evaluation_set": "untouched_clean_test",
+      "seed": 20260728
+    },
+    {
+      "accuracy": 0.6357421875,
+      "boundary": "naive",
+      "evaluation_set": "target",
+      "seed": 20260729
+    },
+    {
+      "accuracy": 0.69921875,
+      "boundary": "naive",
+      "evaluation_set": "clean_validation",
+      "seed": 20260729
+    },
+    {
+      "accuracy": 0.666015625,
+      "boundary": "naive",
+      "evaluation_set": "untouched_clean_test",
+      "seed": 20260729
+    },
+    {
+      "accuracy": 0.6435546875,
+      "boundary": "safe",
+      "evaluation_set": "target",
+      "seed": 20260729
+    },
+    {
+      "accuracy": 0.720703125,
+      "boundary": "safe",
+      "evaluation_set": "clean_validation",
+      "seed": 20260729
+    },
+    {
+      "accuracy": 0.677734375,
+      "boundary": "safe",
+      "evaluation_set": "untouched_clean_test",
+      "seed": 20260729
+    }
+  ],
+  "accuracy_summary": [
+    {
+      "accuracy": 0.6637369791666666,
+      "boundary": "naive",
+      "evaluation_set": "target",
+      "hierarchical_bootstrap_95": [
+        0.6259765625,
+        0.7044270833333334
+      ]
+    },
+    {
+      "accuracy": 0.7027994791666666,
+      "boundary": "naive",
+      "evaluation_set": "clean_validation",
+      "hierarchical_bootstrap_95": [
+        0.677734375,
+        0.727872721354166
+      ]
+    },
+    {
+      "accuracy": 0.6907552083333334,
+      "boundary": "naive",
+      "evaluation_set": "untouched_clean_test",
+      "hierarchical_bootstrap_95": [
+        0.6529947916666666,
+        0.7317708333333334
+      ]
+    },
+    {
+      "accuracy": 0.6800130208333334,
+      "boundary": "safe",
+      "evaluation_set": "target",
+      "hierarchical_bootstrap_95": [
+        0.6409505208333334,
+        0.71484375
+      ]
+    },
+    {
+      "accuracy": 0.716796875,
+      "boundary": "safe",
+      "evaluation_set": "clean_validation",
+      "hierarchical_bootstrap_95": [
+        0.693359375,
+        0.740234375
+      ]
+    },
+    {
+      "accuracy": 0.7027994791666666,
+      "boundary": "safe",
+      "evaluation_set": "untouched_clean_test",
+      "hierarchical_bootstrap_95": [
+        0.6686197916666666,
+        0.7376302083333334
+      ]
+    }
+  ],
+  "competence": {
+    "correct": 317,
+    "exact_ties": 1,
+    "incorrect": 82,
+    "pairs": 400,
+    "scoring_rule": "Correct=1, incorrect=0, exact score tie=0.5.",
+    "strict_accuracy": 0.7925,
+    "strict_wilson_95": [
+      0.7500694660392275,
+      0.829365841775209
+    ],
+    "tie_adjusted_accuracy": 0.79375,
+    "tie_credit": 0.5
+  },
+  "display_name": "Qwen2.5-1.5B",
+  "interactions": {
+    "qwen_minus_character": {
+      "estimate": -0.08821614583333333,
+      "hierarchical_paired_bootstrap_95": [
+        -0.1201171875,
+        -0.056966145833333336
+      ]
+    },
+    "qwen_minus_word": {
+      "estimate": -0.15852864583333334,
+      "hierarchical_paired_bootstrap_95": [
+        -0.193359375,
+        -0.12467447916666667
+      ]
+    }
+  },
+  "learner": "controlled_neural",
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "nominal_seeds": [
+    20260727,
+    20260728,
+    20260729
+  ],
+  "prediction_vector_seed_groups": {
+    "20260727": [
+      20260727
+    ],
+    "20260728": [
+      20260728
+    ],
+    "20260729": [
+      20260729
+    ]
+  },
+  "primary": {
+    "bootstrap_seed": 20261011,
+    "difference_in_differences": -0.0022786458333333335,
+    "estimand": "(target naive-safe accuracy gap) minus (clean-validation naive-safe accuracy gap)",
+    "hierarchical_bootstrap_95": [
+      -0.026692708333333332,
+      0.0205078125
+    ],
+    "paired_sign_randomization_two_sided_p": 0.8169091545422729,
+    "randomization_seed": 20261012,
+    "replicates": 20000
+  },
+  "seed_effects": [
+    {
+      "clean_naive_minus_safe": -0.0263671875,
+      "difference_in_differences": -0.0146484375,
+      "seed": 20260727,
+      "target_naive_minus_safe": -0.041015625,
+      "untouched_naive_minus_safe": -0.021484375
+    },
+    {
+      "clean_naive_minus_safe": 0.005859375,
+      "difference_in_differences": -0.005859375,
+      "seed": 20260728,
+      "target_naive_minus_safe": 0.0,
+      "untouched_naive_minus_safe": -0.0029296875
+    },
+    {
+      "clean_naive_minus_safe": -0.021484375,
+      "difference_in_differences": 0.013671875,
+      "seed": 20260729,
+      "target_naive_minus_safe": -0.0078125,
+      "untouched_naive_minus_safe": -0.01171875
+    }
+  ],
+  "selected_checkpoint_fraction": 100,
+  "source_sha256": "c43838e081172476e91c336bab5152683fb042a8ae628e7fffbc59a192817bf5",
+  "status": "complete",
+  "study": "controlled_qwen15_factorial",
+  "uncertainty_unit": "unique final prediction vector and paired evaluation context",
+  "unique_prediction_vectors": 3,
+  "untouched_clean_consequence": {
+    "hierarchical_bootstrap_95": [
+      -0.0283203125,
+      0.0029296875
+    ],
+    "interpretation": "Independent clean performance difference at the fixed checkpoint; not used for checkpoint selection.",
+    "naive_minus_safe_accuracy": -0.012044270833333334,
+    "paired_sign_randomization_two_sided_p": 0.05724713764311785
+  }
+}

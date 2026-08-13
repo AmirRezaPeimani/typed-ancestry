@@ -1,0 +1,4 @@
+learner,seed,target_naive_minus_safe,clean_naive_minus_safe,difference_in_differences,untouched_naive_minus_safe
+controlled_neural,20260727,-0.041015625,-0.0263671875,-0.0146484375,-0.021484375
+controlled_neural,20260728,0.0,0.005859375,-0.005859375,-0.0029296875
+controlled_neural,20260729,-0.0078125,-0.021484375,0.013671875,-0.01171875

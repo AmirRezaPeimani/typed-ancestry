@@ -1,0 +1,4 @@
+learner,display_name,estimand,estimate,ci_low,ci_high,p_value,nominal_seeds,unique_prediction_vectors,uncertainty_unit
+controlled_word,Word TF-IDF,target_minus_clean_difference_in_differences,0.15625,0.111328125,0.201171875,4.999750012499375e-05,3,1,unique final prediction vector and paired evaluation context
+controlled_character,Character TF-IDF,target_minus_clean_difference_in_differences,0.0859375,0.048828125,0.123046875,4.999750012499375e-05,3,1,unique final prediction vector and paired evaluation context
+controlled_neural,Qwen2.5-1.5B,target_minus_clean_difference_in_differences,-0.0022786458333333335,-0.026692708333333332,0.0205078125,0.8169091545422729,3,3,unique final prediction vector and paired evaluation context

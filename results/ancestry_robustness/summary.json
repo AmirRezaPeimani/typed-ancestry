@@ -1,0 +1,430 @@
+{
+  "bootstrap": {
+    "replicates": 20000,
+    "seed": 20261021,
+    "unit": "validation context"
+  },
+  "component_policies": {
+    "exploratory_response_merge": {
+      "components": 30649,
+      "cross_split_components": 2006,
+      "excluded_manual_weak_keys": 0,
+      "largest_component_fraction": 0.001271278876460278,
+      "largest_component_records": 169,
+      "link_types": [
+        "context",
+        "edit_link",
+        "record",
+        "response"
+      ],
+      "multi_view_components": 26412,
+      "records_in_cross_split_components": 13868,
+      "union_events": 325781
+    },
+    "manual_weak_excluded": {
+      "components": 30796,
+      "cross_split_components": 2005,
+      "excluded_manual_weak_keys": 2,
+      "largest_component_fraction": 0.0006694900592009749,
+      "largest_component_records": 89,
+      "link_types": [
+        "context",
+        "edit_link",
+        "record"
+      ],
+      "multi_view_components": 26545,
+      "records_in_cross_split_components": 13474,
+      "union_events": 162141
+    },
+    "primary": {
+      "components": 30795,
+      "cross_split_components": 2004,
+      "excluded_manual_weak_keys": 0,
+      "largest_component_fraction": 0.0006694900592009749,
+      "largest_component_records": 89,
+      "link_types": [
+        "context",
+        "edit_link",
+        "record"
+      ],
+      "multi_view_components": 26546,
+      "records_in_cross_split_components": 13474,
+      "union_events": 162148
+    },
+    "record_context": {
+      "components": 30795,
+      "cross_split_components": 2004,
+      "excluded_manual_weak_keys": 0,
+      "largest_component_fraction": 0.0006694900592009749,
+      "largest_component_records": 89,
+      "link_types": [
+        "context",
+        "record"
+      ],
+      "multi_view_components": 26546,
+      "records_in_cross_split_components": 13474,
+      "union_events": 154845
+    }
+  },
+  "dataset": "nvidia/HelpSteer3",
+  "dataset_revision": "f6d145777bcbde96137596340fab89793acd1031",
+  "normalizations": {
+    "casefold": {
+      "edit_quality": [
+        {
+          "context_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "context_rate": 0.0,
+          "endpoint": "record",
+          "exposed": 0,
+          "normalization": "casefold",
+          "records": 163,
+          "row_rate": 0.0,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.0,
+            0.023024605801502687
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.6871165644171779,
+            0.8220858895705522
+          ],
+          "context_rate": 0.754601226993865,
+          "endpoint": "context",
+          "exposed": 123,
+          "normalization": "casefold",
+          "records": 163,
+          "row_rate": 0.754601226993865,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.6831798514576098,
+            0.8142984167538948
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.6257668711656442,
+            0.7668711656441718
+          ],
+          "context_rate": 0.6993865030674846,
+          "endpoint": "response",
+          "exposed": 114,
+          "normalization": "casefold",
+          "records": 163,
+          "row_rate": 0.6993865030674846,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.6250684949042024,
+            0.7645229199602289
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.588957055214724,
+            0.7361963190184049
+          ],
+          "context_rate": 0.6625766871165644,
+          "endpoint": "feedback",
+          "exposed": 108,
+          "normalization": "casefold",
+          "records": 163,
+          "row_rate": 0.6625766871165644,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.5869891748143795,
+            0.730677671152003
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.558282208588957,
+            0.7055214723926381
+          ],
+          "context_rate": 0.6319018404907976,
+          "endpoint": "edit_link",
+          "exposed": 103,
+          "normalization": "casefold",
+          "records": 163,
+          "row_rate": 0.6319018404907976,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.5556201227329712,
+            0.7021095824850373
+          ]
+        }
+      ]
+    },
+    "primary": {
+      "edit_quality": [
+        {
+          "context_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "context_rate": 0.0,
+          "endpoint": "record",
+          "exposed": 0,
+          "normalization": "primary",
+          "records": 163,
+          "row_rate": 0.0,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.0,
+            0.023024605801502687
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.6871165644171779,
+            0.8220858895705522
+          ],
+          "context_rate": 0.754601226993865,
+          "endpoint": "context",
+          "exposed": 123,
+          "normalization": "primary",
+          "records": 163,
+          "row_rate": 0.754601226993865,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.6831798514576098,
+            0.8142984167538948
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.6257668711656442,
+            0.7668711656441718
+          ],
+          "context_rate": 0.6993865030674846,
+          "endpoint": "response",
+          "exposed": 114,
+          "normalization": "primary",
+          "records": 163,
+          "row_rate": 0.6993865030674846,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.6250684949042024,
+            0.7645229199602289
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.588957055214724,
+            0.7361963190184049
+          ],
+          "context_rate": 0.6625766871165644,
+          "endpoint": "feedback",
+          "exposed": 108,
+          "normalization": "primary",
+          "records": 163,
+          "row_rate": 0.6625766871165644,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.5869891748143795,
+            0.730677671152003
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.558282208588957,
+            0.7055214723926381
+          ],
+          "context_rate": 0.6319018404907976,
+          "endpoint": "edit_link",
+          "exposed": 103,
+          "normalization": "primary",
+          "records": 163,
+          "row_rate": 0.6319018404907976,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.5556201227329712,
+            0.7021095824850373
+          ]
+        }
+      ]
+    },
+    "punctuation": {
+      "edit_quality": [
+        {
+          "context_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "context_rate": 0.0,
+          "endpoint": "record",
+          "exposed": 0,
+          "normalization": "punctuation",
+          "records": 163,
+          "row_rate": 0.0,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.0,
+            0.023024605801502687
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.6871165644171779,
+            0.8159509202453987
+          ],
+          "context_rate": 0.754601226993865,
+          "endpoint": "context",
+          "exposed": 123,
+          "normalization": "punctuation",
+          "records": 163,
+          "row_rate": 0.754601226993865,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.6831798514576098,
+            0.8142984167538948
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.6257668711656442,
+            0.7668711656441718
+          ],
+          "context_rate": 0.6993865030674846,
+          "endpoint": "response",
+          "exposed": 114,
+          "normalization": "punctuation",
+          "records": 163,
+          "row_rate": 0.6993865030674846,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.6250684949042024,
+            0.7645229199602289
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.588957055214724,
+            0.7361963190184049
+          ],
+          "context_rate": 0.6625766871165644,
+          "endpoint": "feedback",
+          "exposed": 108,
+          "normalization": "punctuation",
+          "records": 163,
+          "row_rate": 0.6625766871165644,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.5869891748143795,
+            0.730677671152003
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.558282208588957,
+            0.7055214723926381
+          ],
+          "context_rate": 0.6319018404907976,
+          "endpoint": "edit_link",
+          "exposed": 103,
+          "normalization": "punctuation",
+          "records": 163,
+          "row_rate": 0.6319018404907976,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.5556201227329712,
+            0.7021095824850373
+          ]
+        }
+      ]
+    },
+    "raw": {
+      "edit_quality": [
+        {
+          "context_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "context_rate": 0.0,
+          "endpoint": "record",
+          "exposed": 0,
+          "normalization": "raw",
+          "records": 163,
+          "row_rate": 0.0,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.0,
+            0.023024605801502687
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.6871165644171779,
+            0.8159509202453987
+          ],
+          "context_rate": 0.754601226993865,
+          "endpoint": "context",
+          "exposed": 123,
+          "normalization": "raw",
+          "records": 163,
+          "row_rate": 0.754601226993865,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.6831798514576098,
+            0.8142984167538948
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.6196319018404908,
+            0.7607361963190185
+          ],
+          "context_rate": 0.6932515337423313,
+          "endpoint": "response",
+          "exposed": 113,
+          "normalization": "raw",
+          "records": 163,
+          "row_rate": 0.6932515337423313,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.6186873061929019,
+            0.7589166805218548
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.588957055214724,
+            0.7361963190184049
+          ],
+          "context_rate": 0.6625766871165644,
+          "endpoint": "feedback",
+          "exposed": 108,
+          "normalization": "raw",
+          "records": 163,
+          "row_rate": 0.6625766871165644,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.5869891748143795,
+            0.730677671152003
+          ]
+        },
+        {
+          "context_bootstrap_95": [
+            0.558282208588957,
+            0.7055214723926381
+          ],
+          "context_rate": 0.6319018404907976,
+          "endpoint": "edit_link",
+          "exposed": 103,
+          "normalization": "raw",
+          "records": 163,
+          "row_rate": 0.6319018404907976,
+          "view": "edit_quality",
+          "wilson_95": [
+            0.5556201227329712,
+            0.7021095824850373
+          ]
+        }
+      ]
+    }
+  },
+  "status": "complete"
+}

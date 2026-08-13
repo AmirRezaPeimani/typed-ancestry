@@ -1,0 +1,47 @@
+{
+  "context_bootstrap_replicates": 20000,
+  "context_bootstrap_seed": 20261011,
+  "discordant_counts": {
+    "clean_only_correct": 67,
+    "exposed_only_correct": 51
+  },
+  "frozen_hierarchical_bootstrap_95": [
+    0.007161458333333333,
+    0.055338541666666664
+  ],
+  "frozen_point_estimate": 0.03125,
+  "inputs": {
+    "predictions_sha256": "7724148e2404fcdeabbf9e7d66a57bdf8bac9986b5c5b59f10c6c2b9b0ae941c",
+    "summary_sha256": "e7537feee17646169ebccdaf11e8339a881bdac8ee6474a9fc8795a26ae73b9e"
+  },
+  "interpretation": "The selectors make different decisions and the observed untouched difference is +3.125 percentage points, but the corrected interval includes zero and modest harm. The downstream benefit is suggestive, not statistically resolved.",
+  "mcnemar_exact_two_sided_p": 0.16705111417380242,
+  "paired_tables_by_seed": {
+    "20260727": {
+      "both_correct": 192,
+      "both_wrong": 202,
+      "clean_only_correct": 67,
+      "exposed_only_correct": 51
+    },
+    "20260728": {
+      "both_correct": 192,
+      "both_wrong": 202,
+      "clean_only_correct": 67,
+      "exposed_only_correct": 51
+    },
+    "20260729": {
+      "both_correct": 192,
+      "both_wrong": 202,
+      "clean_only_correct": 67,
+      "exposed_only_correct": 51
+    }
+  },
+  "prediction_vectors_identical_across_nominal_seeds": true,
+  "primary_context_paired_bootstrap_95": [
+    -0.009765625,
+    0.072265625
+  ],
+  "reason_for_correction": "The three nominal seeds produced identical predictions. Resampling the same 512-context vector independently three times treats exact duplicates as independent information and narrows uncertainty.",
+  "status": "complete",
+  "unique_prediction_vectors": 1
+}
