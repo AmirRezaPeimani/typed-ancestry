@@ -31,28 +31,28 @@
   "figures": [
     {
       "figure": "learning_dynamics_main",
-      "pdf_sha256": "5caa3a2dbda86fd8618bf7ef2f3db4ae027092319673b4838588f1f436e75984",
-      "png_sha256": "200531fcae4a84f81837bf5f376a2124cf5e4cfb4e42db08fc4769bb754825d5"
+      "pdf_sha256": "d9f567a763c0fcacf26e15ec95c25c338d6a95207a9fbf05d9ac5627d844590d",
+      "png_sha256": "0d69372d47af6b3da3cd82af0256f60728dd69fe8852662188845ad74f44283a"
     },
     {
       "figure": "learning_dynamics_acquisition",
-      "pdf_sha256": "d6c599c0ece75de6de05fae09f3e00589a104cca1fdcbd941ac7b720684c795d",
-      "png_sha256": "fd88a898101602d52770b3dcb10e5b284f7c3d95bea7ab460d20c0a54f10953f"
+      "pdf_sha256": "72d2ba5248eae17a8c57d3c94f832bd47777b54e1f614ff6b2f45a284c2ab785",
+      "png_sha256": "45ce1169331e70ace7291f94547e357a0254ace4555a8d7bd009202fde131ca2"
     },
     {
       "figure": "controlled_cross_learner_factorial_main",
-      "pdf_sha256": "d900ba0a8b61ec2db2ae83b03cb06cc6a641d780587261d7ce4980969c4dd0a5",
-      "png_sha256": "a710da1c3d247cc252bd6daf23ccfeffabe3f5507c28edb9e8afc0e22bcb1015"
+      "pdf_sha256": "7d3037c7a1ce79ac6351f4985886188385c14ede61f419527611cd09cf01c193",
+      "png_sha256": "e9d0a067d712eb4eb4c9ca025766c76ac857dc120fd0d082bd9f88a3814c3cd3"
     },
     {
       "figure": "candidate_selection_main",
-      "pdf_sha256": "7941f7161b29bfb6c23972b2541153eb346b4dcb1ef4cf1e18b9518c9c48f3af",
-      "png_sha256": "af054ecf0a03d1dcc641b76f716d45b463cdc27d825fb832fea94bf19d9a92c9"
+      "pdf_sha256": "c33aa8db08ea2203b0f0ed3c2ff9ad245a24aeff9753db6daf9362614215f0bf",
+      "png_sha256": "3723a9c967e0da5c2123d1707ca2e69df80588e6a6f9150fce1f25c32ce50261"
     },
     {
       "figure": "candidate_selection_supp",
-      "pdf_sha256": "6cab9d521871f8976c2a5f054fda9a130712a9de1cc9040961b37c42a9c92865",
-      "png_sha256": "251d97ee98424ab1957e843be683cec14614dbb9bc9e83e0fd36082c381f227e"
+      "pdf_sha256": "f065d35c7e5938a4279f3d9a041e02e2a28af67a323fe0b67878d2f914cad984",
+      "png_sha256": "804c7b1761c27e58150e7f16a3b3897bdc7851bbbe526cc3c9b398de582ed209"
     }
   ],
   "registry_files_checked": 23,

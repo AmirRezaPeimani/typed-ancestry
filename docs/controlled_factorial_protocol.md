@@ -5,9 +5,9 @@
 The controlled experiment compares two training boundaries with identical
 training-set size:
 
-- **Naive boundary:** 4,000 shared training pairs plus 512 ancestor pairs tied
+- **Ancestor included (`naive`):** 4,000 shared training pairs plus 512 ancestor pairs tied
   to the target validation view.
-- **Safe boundary:** the same 4,000 shared pairs plus 512 size-matched,
+- **Ancestor excluded (`safe`):** the same 4,000 shared pairs plus 512 size-matched,
   component-disjoint filler pairs.
 
 Evaluation uses the same 512 target pairs, 512 ancestry-clean validation
@@ -15,12 +15,12 @@ pairs, and 512 untouched clean-test pairs for every learner, boundary, and
 seed. The primary estimand is:
 
 ```text
-(target naive-minus-safe accuracy gap)
+(target ancestor-included-minus-ancestor-excluded accuracy gap)
 -
-(clean-validation naive-minus-safe accuracy gap)
+(clean-validation ancestor-included-minus-ancestor-excluded accuracy gap)
 ```
 
-The untouched estimand is the naive-minus-safe accuracy difference on the
+The untouched estimand is the ancestor-included-minus-ancestor-excluded accuracy difference on the
 untouched clean test.
 
 ## Learners

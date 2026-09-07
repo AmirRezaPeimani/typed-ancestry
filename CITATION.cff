@@ -12,7 +12,7 @@ authors:
 license: Apache-2.0
 preferred-citation:
   type: article
-  title: "Typed Ancestry Reveals Learner-Dependent Validation Distortion in Multi-View Post-Training Data"
+  title: "Cross-View Contamination Inflates Reward-Model Validation Accuracy"
   authors:
     - family-names: Peimani
       given-names: Amir Reza

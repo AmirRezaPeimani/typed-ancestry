@@ -1,4 +1,4 @@
-# Typed-Ancestry Audit and Ancestry-Safe Selection
+# Typed-Ancestry Audit and Ancestor-Excluded Filler Selection
 
 **Inputs.** Training records \(D_{\mathrm{tr}}\), evaluation records
 \(D_{\mathrm{ev}}\), each tagged with dataset view and split; a set of
@@ -7,7 +7,7 @@ component-linking atom types
 target filler size \(m\); optional balance strata \(s(\cdot)\).
 
 **Outputs.** Typed exposure tensor \(E\), connected-component identifiers
-\(\kappa\), and an ancestry-safe filler block \(F\).
+\(\kappa\), and an ancestor-excluded filler block \(F\).
 
 ```text
 procedure CANONICALIZE(value)

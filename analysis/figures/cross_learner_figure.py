@@ -177,7 +177,7 @@ def draw_did_forest(axis: plt.Axes, factorial: pd.DataFrame, seeds: pd.DataFrame
     axis.set_ylim(-0.48, 2.48)
     axis.set_xticks([0, 10, 20])
     axis.set_yticks([])
-    axis.set_xlabel("Target-minus-clean DiD (pp)")
+    axis.set_xlabel("Target-minus-clean\neffect (pp)", fontsize=7.0)
     axis.spines[["top", "right", "left"]].set_visible(False)
 
 
@@ -206,7 +206,7 @@ def draw_interaction_forest(axis: plt.Axes, interactions: pd.DataFrame) -> None:
     axis.set_ylim(-0.55, 1.55)
     axis.set_yticks(y, ["Qwen\n- word", "Qwen\n- character"])
     axis.set_xticks([-20, -15, -10, -5, 0])
-    axis.set_xlabel("Difference in target-minus-clean DiD (pp)")
+    axis.set_xlabel("Difference in target-minus-clean effect (pp)")
     axis.tick_params(axis="y", length=0, pad=6)
     axis.spines[["top", "right", "left"]].set_visible(False)
 
@@ -216,9 +216,9 @@ def make_decomposition(data: dict[str, pd.DataFrame]) -> None:
     seeds = data["qwen_seed_cells"]
     figure = plt.figure(figsize=(7.35, 5.20))
     figure.text(0.04, 0.925, "A", ha="left", va="top", fontsize=11.0, fontweight="bold")
-    figure.text(0.07, 0.925, "Controlled outcome decomposition", ha="left", va="top", fontsize=9.8, fontweight="semibold")
+    figure.text(0.07, 0.925, "Accuracy by training condition", ha="left", va="top", fontsize=9.8, fontweight="semibold")
 
-    figure.text(0.49, 0.844, "○ ancestry-safe  →  ● naïve", ha="center", va="center", fontsize=7.4, color=INK)
+    figure.text(0.49, 0.844, "○ Ancestor excluded  →  ● Ancestor included", ha="center", va="center", fontsize=7.4, color=INK)
     left, width, gap = 0.245, 0.132, 0.028
     axes = [
         figure.add_axes([left + index * (width + gap), 0.430, width, 0.300])
@@ -240,7 +240,7 @@ def make_decomposition(data: dict[str, pd.DataFrame]) -> None:
     ):
         draw_decomposition_cell(axis, cells, seeds, evaluation)
     draw_did_forest(did_axis, data["factorial"], seeds)
-    figure.text(0.855, 0.805, "Target-minus-clean DiD\n95% interval", ha="center", va="center", fontsize=7.7, fontweight="semibold", linespacing=1.0)
+    figure.text(0.855, 0.805, "Target-minus-clean effect\n95% interval", ha="center", va="center", fontsize=7.7, fontweight="semibold", linespacing=1.0)
     factorial = data["factorial"].set_index("learner")
     for ypos, learner in zip([0.686, 0.582, 0.478], LEARNERS, strict=True):
         figure.text(0.855, ypos, interval(factorial.loc[learner]), ha="left", va="center", fontsize=6.2)
@@ -251,7 +251,7 @@ def make_decomposition(data: dict[str, pd.DataFrame]) -> None:
 
     figure.add_artist(Line2D([0.04, 0.965], [0.305, 0.305], transform=figure.transFigure, color=LIGHT, linewidth=0.9))
     figure.text(0.04, 0.268, "B", ha="left", va="center", fontsize=11.0, fontweight="bold")
-    figure.text(0.07, 0.268, "Cross-learner differences in DiD", ha="left", va="center", fontsize=9.4, fontweight="semibold")
+    figure.text(0.07, 0.268, "Cross-learner differences in target-minus-clean effect", ha="left", va="center", fontsize=9.4, fontweight="semibold")
     interaction_axis = figure.add_axes([0.34, 0.085, 0.55, 0.135])
     draw_interaction_forest(interaction_axis, data["interactions"])
 

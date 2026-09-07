@@ -93,7 +93,7 @@ def draw_rank_reversal(figure: plt.Figure, frame: pd.DataFrame, summary: dict[st
     axis.set_xlim(0, 1)
     axis.set_ylim(0.45, 6.85)
     figure.text(0.055, 0.925, "A", ha="left", va="top", fontsize=11.0, fontweight="bold")
-    figure.text(0.085, 0.925, "Validation ranking reversal", ha="left", va="top", fontsize=9.8, fontweight="semibold")
+    figure.text(0.085, 0.925, "Model rankings by validation set", ha="left", va="top", fontsize=9.8, fontweight="semibold")
 
     exposed_order = rank_order(frame, "exposed_accuracy")
     clean_order = rank_order(frame, "clean_accuracy")
@@ -129,8 +129,8 @@ def draw_rank_reversal(figure: plt.Figure, frame: pd.DataFrame, summary: dict[st
     axis.text(right_x, 6.78, "Ancestry-clean\nvalidation", ha="center", va="bottom", fontsize=8.5, fontweight="semibold", linespacing=1.0)
     axis.text(left_x, 6.43, "Exposed-target\nselection", ha="center", va="center", fontsize=6.2, color=BLUE, linespacing=1.0, bbox={"boxstyle": "round,pad=0.20", "facecolor": WHITE, "edgecolor": BLUE, "linewidth": 0.8})
     axis.text(right_x, 6.43, "Ancestry-clean\nselection", ha="center", va="center", fontsize=6.2, color=OCHRE, linespacing=1.0, bbox={"boxstyle": "round,pad=0.20", "facecolor": WHITE, "edgecolor": OCHRE, "linewidth": 0.8})
-    axis.text(left_x, 6.08, f"Margin +{100 * summary['exposed_winner_margin']:.2f} pp\nSelected in {100 * summary['exposed_winner_bootstrap_frequency']:.1f}% of\nbootstrap resamples", ha="center", va="top", fontsize=5.5, color=MID, linespacing=1.15)
-    axis.text(right_x, 6.08, f"Margin +{100 * summary['clean_winner_margin']:.2f} pp\nSelected in {100 * summary['clean_winner_bootstrap_frequency']:.1f}% of\nbootstrap resamples", ha="center", va="top", fontsize=5.5, color=MID, linespacing=1.15)
+    axis.text(left_x, 6.13, f"Margin +{100 * summary['exposed_winner_margin']:.2f} pp\nSelected in {100 * summary['exposed_winner_bootstrap_frequency']:.1f}% of\nbootstrap resamples", ha="center", va="top", fontsize=5.0, color=MID, linespacing=1.15)
+    axis.text(right_x, 6.13, f"Margin +{100 * summary['clean_winner_margin']:.2f} pp\nSelected in {100 * summary['clean_winner_bootstrap_frequency']:.1f}% of\nbootstrap resamples", ha="center", va="top", fontsize=5.0, color=MID, linespacing=1.15)
     axis.text(0.0, 3.35, "Candidate rank (1 = best)", ha="center", va="center", rotation=90, fontsize=7.2, color=MID)
 
 
@@ -140,12 +140,12 @@ def draw_sealed_consequence(figure: plt.Figure, summary: dict[str, object]) -> N
     low = 100 * float(untouched["ci_low"])
     high = 100 * float(untouched["ci_high"])
     figure.text(0.675, 0.925, "B", ha="left", va="top", fontsize=11.0, fontweight="bold")
-    figure.text(0.705, 0.925, "Sealed untouched\nevaluation consequence", ha="left", va="top", fontsize=9.4, fontweight="semibold", linespacing=1.0)
+    figure.text(0.705, 0.925, "Untouched evaluation", ha="left", va="top", fontsize=9.4, fontweight="semibold", linespacing=1.0)
     raw = figure.add_axes([0.72, 0.650, 0.245, 0.105])
     raw.plot([47.4609375, 50.5859375], [0, 0], color=INK, linewidth=1.2)
     raw.scatter(47.4609375, 0, s=48, color=BLUE, edgecolor=INK, linewidth=0.7, zorder=3)
     raw.scatter(50.5859375, 0, s=48, color=OCHRE, edgecolor=INK, linewidth=0.7, zorder=3)
-    raw.text(47.15, -0.31, "Exposed-selected\n47.46%", ha="right", va="top", fontsize=6.5, color=BLUE, linespacing=1.05)
+    raw.text(47.15, -0.04, "Exposed-selected\n47.46%", ha="right", va="top", fontsize=6.5, color=BLUE, linespacing=1.05)
     raw.text(51.30, 0.31, "Ancestry-clean-selected\n50.59%", ha="right", va="bottom", fontsize=5.8, color=OCHRE, linespacing=1.05)
     raw.set_xlim(45.5, 52.3)
     raw.set_ylim(-0.55, 0.55)
@@ -188,7 +188,7 @@ def make_ranking(data: dict[str, object]) -> None:
     draw_sealed_consequence(figure, data["result_summary"])
     figure.text(0.055, 0.025, "Codes: WU = word unigram; W1-2 = word 1-2 gram; C3-5 = character 3-5 gram; W+C = word-character union.", ha="left", va="bottom", fontsize=5.9, color=MID)
     output = FIGURES / "candidate_selection_main"
-    metadata = {"Title": "Validation ranking reversal", "Creator": "Matplotlib", "CreationDate": None, "ModDate": None}
+    metadata = {"Title": "Model rankings by validation set", "Creator": "Matplotlib", "CreationDate": None, "ModDate": None}
     figure.savefig(output.with_suffix(".pdf"), metadata=metadata)
     figure.savefig(output.with_suffix(".png"), dpi=320)
     plt.close(figure)
@@ -196,7 +196,7 @@ def make_ranking(data: dict[str, object]) -> None:
 
 def draw_sensitivity(figure: plt.Figure, frame: pd.DataFrame, probabilities: pd.DataFrame, regions: pd.DataFrame) -> None:
     figure.text(0.055, 0.925, "A", ha="left", va="top", fontsize=11.0, fontweight="bold")
-    figure.text(0.085, 0.925, "Sensitivity to validation-objective weighting", ha="left", va="top", fontsize=9.6, fontweight="semibold")
+    figure.text(0.085, 0.925, "Sensitivity to validation weighting", ha="left", va="top", fontsize=9.6, fontweight="semibold")
     exposed = frame.set_index("candidate").exposed_accuracy
     clean = frame.set_index("candidate").clean_accuracy
     strip = figure.add_axes([0.11, 0.775, 0.57, 0.050])
@@ -220,7 +220,7 @@ def draw_sensitivity(figure: plt.Figure, frame: pd.DataFrame, probabilities: pd.
     boundaries = regions.end_weight.to_numpy()[:-1]
     for boundary in boundaries:
         axis.axvline(boundary, color=INK, linestyle=":", linewidth=0.8)
-        axis.text(boundary, 44.7, f"w={boundary:.3f}", ha="center", va="top", fontsize=6.1, color=INK)
+        axis.text(boundary, 46.5, f"w={boundary:.3f}", ha="center", va="top", fontsize=6.1, color=INK)
     axis.set_xlim(0, 1)
     axis.set_ylim(44, 66)
     axis.set_xlabel("Exposed-target validation weight, w")
@@ -233,7 +233,8 @@ def draw_sensitivity(figure: plt.Figure, frame: pd.DataFrame, probabilities: pd.
     heat = figure.add_axes([0.11, 0.170, 0.57, 0.185])
     matrix = probabilities.pivot(index="candidate", columns="exposed_weight", values="winner_probability").reindex(index=CANDIDATES, columns=weights).to_numpy()
     cmap = LinearSegmentedColormap.from_list("selection_probability", [WHITE, "#BBD2E9", BLUE])
-    image = heat.imshow(matrix, aspect="auto", origin="upper", extent=[0, 1, 6.5, 0.5], vmin=0, vmax=1, cmap=cmap, interpolation="nearest")
+    image = heat.pcolormesh(np.linspace(0, 1, matrix.shape[1] + 1), np.arange(0.5, 7.0), matrix, vmin=0, vmax=1, cmap=cmap, shading="flat", rasterized=False)
+    heat.set_ylim(6.5, 0.5)
     key_weights = [0.0, float(boundaries[0]), float(boundaries[1]), 1.0]
     for boundary in boundaries:
         heat.axvline(boundary, color=INK, linestyle=":", linewidth=0.8)
@@ -250,6 +251,7 @@ def draw_sensitivity(figure: plt.Figure, frame: pd.DataFrame, probabilities: pd.
     heat.tick_params(axis="y", length=0, pad=4, labelsize=6.2)
     heat.spines[:].set_visible(False)
     colorbar = figure.colorbar(image, ax=heat, orientation="horizontal", fraction=0.065, pad=0.25)
+    colorbar.solids.set_rasterized(False)
     colorbar.set_label("Bootstrap selection probability", fontsize=6.4, labelpad=1)
     colorbar.ax.tick_params(labelsize=5.9, length=2)
 
@@ -259,7 +261,7 @@ def make_sensitivity(data: dict[str, object]) -> None:
     draw_sensitivity(figure, data["candidate_summary"], data["winner_probabilities"], data["winner_regions"])
     figure.add_artist(Line2D([0.705, 0.705], [0.12, 0.91], transform=figure.transFigure, color=LIGHT, linewidth=1.0))
     figure.text(0.725, 0.925, "C", ha="left", va="top", fontsize=11.0, fontweight="bold")
-    figure.text(0.755, 0.925, "Sealed untouched\nconsequence", ha="left", va="top", fontsize=9.2, fontweight="semibold", linespacing=1.0)
+    figure.text(0.755, 0.925, "Untouched\nevaluation", ha="left", va="top", fontsize=9.2, fontweight="semibold", linespacing=1.0)
     figure.text(0.725, 0.775, "Selection rule", fontsize=6.5, color=MID, fontweight="bold")
     figure.text(0.96, 0.775, "Accuracy", ha="right", fontsize=6.5, color=MID, fontweight="bold")
     figure.text(0.725, 0.715, "Exposed-target validation\nWU / C=1", ha="left", va="center", fontsize=6.8, linespacing=1.3)
@@ -280,7 +282,7 @@ def make_sensitivity(data: dict[str, object]) -> None:
     figure.text(0.845, 0.535, "+3.13 pp [-0.98, 7.23]", ha="center", va="center", fontsize=7.0, fontweight="semibold")
     figure.text(0.725, 0.305, "67 contexts favor ancestry-clean-selected\n51 contexts favor exposed-selected\nExact McNemar p = 0.167", ha="left", va="top", fontsize=6.2, linespacing=1.4)
     output = FIGURES / "candidate_selection_supp"
-    metadata = {"Title": "Sensitivity to validation-objective weighting", "Creator": "Matplotlib", "CreationDate": None, "ModDate": None}
+    metadata = {"Title": "Sensitivity to validation weighting", "Creator": "Matplotlib", "CreationDate": None, "ModDate": None}
     figure.savefig(output.with_suffix(".pdf"), metadata=metadata)
     figure.savefig(output.with_suffix(".png"), dpi=320)
     plt.close(figure)

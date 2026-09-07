@@ -105,7 +105,7 @@ def paired_differences_by_context(
     evaluation_set: str,
     seeds: list[int],
 ) -> np.ndarray:
-    """Average paired naïve-minus-safe correctness within context over seeds."""
+    """Average paired ancestor-included-minus-ancestor-excluded correctness within context over seeds."""
     keys = sorted(predictions[(SEEDS[0], "naive", evaluation_set)])
     rows = []
     for seed in seeds:

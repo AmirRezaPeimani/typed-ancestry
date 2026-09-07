@@ -1,13 +1,18 @@
 {
   "schema_version": "1.0",
   "root": ".",
-  "file_count": 132,
-  "total_bytes": 18719086,
+  "file_count": 133,
+  "total_bytes": 18652967,
   "files": [
     {
       "path": ".gitattributes",
       "bytes": 88,
       "sha256": "49c9beda5b449097db7ab40994c105e78eda46b885bd8afe1feb89368449eb46"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 1956,
+      "sha256": "83e444ca9b3c65488b8477c6c5989ff929c9e4345fd59929a0868145c50ffd0f"
     },
     {
       "path": ".gitignore",
@@ -16,8 +21,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 686,
-      "sha256": "710d3be6916bdd65b0a0678bcd3ae975108713cace185e70a363f8152cec41f2"
+      "bytes": 657,
+      "sha256": "b9284669068a2ca08d78b62e42546be44c1589a96a86aa124bbec5947c1814a2"
     },
     {
       "path": "LICENSE",
@@ -31,8 +36,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3606,
-      "sha256": "3de033068ee6f07794d4d9ea4a04a9b2e9af50f24d71359978ba2b61570c0360"
+      "bytes": 3881,
+      "sha256": "c22369ac7b5c29034d486050773aedf0713750130720e938542fc87371a635ae"
     },
     {
       "path": "REPRODUCING.md",
@@ -46,8 +51,8 @@
     },
     {
       "path": "analysis/analyze_controlled_qwen15_factorial.py",
-      "bytes": 21474,
-      "sha256": "9ea25c5ec38302115a7709e26aace915b6d6aeda451e8be99cf51ed9f4ea575a"
+      "bytes": 21498,
+      "sha256": "7ac3b58128631300ae5340f5b39d2b7e376bf51acec824ff69aef24d9136d9cd"
     },
     {
       "path": "analysis/analyze_controlled_sparse_factorial.py",
@@ -61,8 +66,8 @@
     },
     {
       "path": "analysis/build_evidence_registry.py",
-      "bytes": 8347,
-      "sha256": "2c51db7e9d8f829ce0e5b1ba7228d704acdfbc00442b931de78fc43ccb31a90f"
+      "bytes": 8338,
+      "sha256": "0d73e8caca32d393564ce1304b6e629ea2b6ce0fc06d08548e49bcd301a1e240"
     },
     {
       "path": "analysis/controlled_serializer.py",
@@ -81,8 +86,8 @@
     },
     {
       "path": "analysis/figures/candidate_selection_figures.py",
-      "bytes": 16860,
-      "sha256": "20b40f06efcff780b1ca9c2d4c6bf0c94f35cabea5fada38f6893e80b1d98602"
+      "bytes": 16910,
+      "sha256": "f87429c9fb01264e7e836ae9f9d9417331b1f05f26e8e29a3bc54f6028bd7525"
     },
     {
       "path": "analysis/figures/cross_learner_data.py",
@@ -91,18 +96,18 @@
     },
     {
       "path": "analysis/figures/cross_learner_figure.py",
-      "bytes": 11351,
-      "sha256": "66f9e01e78b8d0450f5ee8a714a4597d3990de6ae3f82fce00b5e4896e1b7398"
+      "bytes": 11410,
+      "sha256": "b0ed82170fd54274f2783a7a535f609933a97918f6b3ba5a724e319bcb01c4b0"
     },
     {
       "path": "analysis/figures/learning_data.py",
-      "bytes": 26972,
-      "sha256": "2e9e39546f7ab2627569703d0b679000a20edc64fed00b7cf67dc7dc79f24707"
+      "bytes": 26987,
+      "sha256": "c75b527b375f216a42ef9cbd1aa8c727378b714543757d0859dd9a8f04ebfb21"
     },
     {
       "path": "analysis/figures/learning_figures.py",
-      "bytes": 27718,
-      "sha256": "c6d75047f502363a8c701beac1df1a94d9ff9509315a2255cc3f7e68201f10a7"
+      "bytes": 27774,
+      "sha256": "f297ab1adc46e493a896989dcdab7dbc933c198b2b7dac657e48e071570e29a5"
     },
     {
       "path": "analysis/run_controlled_qwen15_training.py",
@@ -146,13 +151,13 @@
     },
     {
       "path": "docs/controlled_factorial_protocol.md",
-      "bytes": 2631,
-      "sha256": "cdb60e2c81e4d193c9f3e59e55ecc9da56e8f35d92d5f3033d103fc6fca2f1ab"
+      "bytes": 2732,
+      "sha256": "ece64c4be9c6a0d271652a39bfe730bbea4d76923aaae6129cf19a642d76a102"
     },
     {
       "path": "docs/figure_map.md",
-      "bytes": 1515,
-      "sha256": "ded0374936210e740bd5560452dcaf98b81d19196ee72ca537218be5f2536a1b"
+      "bytes": 2579,
+      "sha256": "e53b3420945628306ff9d189894de8919d14723ace564d8bf3e83422de461d5d"
     },
     {
       "path": "docs/model_selection_protocol.md",
@@ -161,68 +166,68 @@
     },
     {
       "path": "docs/schematic_field_verification.md",
-      "bytes": 2317,
-      "sha256": "759274bc6d06fd0bd2992380e8d17ab84fccf3e2668ef2d57fececdef18e3a6e"
+      "bytes": 2345,
+      "sha256": "0fc139698b950e8afd6fe4bc8790d14c2eecfeff968c423bcfe4147ea3920344"
     },
     {
       "path": "docs/typed_ancestry_algorithm.md",
-      "bytes": 3042,
-      "sha256": "2384aa5a4d8678cce0ebe3aa42a5a0a53feffce76dea51b04949f6964ef0e622"
+      "bytes": 3057,
+      "sha256": "88d8278adb7756397388c3ee3b9f2f41afc9cd711489145bfeef1e87fcd86fa7"
     },
     {
       "path": "evidence/evidence_registry.json",
-      "bytes": 11356,
-      "sha256": "a7eab55337e8edc85aaff8d957fec07d0d0ea292ad21f36442032c948e0c5b48"
+      "bytes": 11347,
+      "sha256": "10767f67504c77e362f86afb6f36b19372cecc5c11c83df2680312cec539d223"
     },
     {
       "path": "figures/candidate_selection_main.pdf",
-      "bytes": 30652,
-      "sha256": "7941f7161b29bfb6c23972b2541153eb346b4dcb1ef4cf1e18b9518c9c48f3af"
+      "bytes": 30682,
+      "sha256": "c33aa8db08ea2203b0f0ed3c2ff9ad245a24aeff9753db6daf9362614215f0bf"
     },
     {
       "path": "figures/candidate_selection_main.png",
-      "bytes": 351691,
-      "sha256": "af054ecf0a03d1dcc641b76f716d45b463cdc27d825fb832fea94bf19d9a92c9"
+      "bytes": 326078,
+      "sha256": "3723a9c967e0da5c2123d1707ca2e69df80588e6a6f9150fce1f25c32ce50261"
     },
     {
       "path": "figures/candidate_selection_supp.pdf",
-      "bytes": 35456,
-      "sha256": "6cab9d521871f8976c2a5f054fda9a130712a9de1cc9040961b37c42a9c92865"
+      "bytes": 55463,
+      "sha256": "f065d35c7e5938a4279f3d9a041e02e2a28af67a323fe0b67878d2f914cad984"
     },
     {
       "path": "figures/candidate_selection_supp.png",
-      "bytes": 294591,
-      "sha256": "251d97ee98424ab1957e843be683cec14614dbb9bc9e83e0fd36082c381f227e"
+      "bytes": 269929,
+      "sha256": "804c7b1761c27e58150e7f16a3b3897bdc7851bbbe526cc3c9b398de582ed209"
     },
     {
       "path": "figures/controlled_cross_learner_factorial_main.pdf",
-      "bytes": 33510,
-      "sha256": "d900ba0a8b61ec2db2ae83b03cb06cc6a641d780587261d7ce4980969c4dd0a5"
+      "bytes": 33697,
+      "sha256": "7d3037c7a1ce79ac6351f4985886188385c14ede61f419527611cd09cf01c193"
     },
     {
       "path": "figures/controlled_cross_learner_factorial_main.png",
-      "bytes": 243337,
-      "sha256": "a710da1c3d247cc252bd6daf23ccfeffabe3f5507c28edb9e8afc0e22bcb1015"
+      "bytes": 237743,
+      "sha256": "e9d0a067d712eb4eb4c9ca025766c76ac857dc120fd0d082bd9f88a3814c3cd3"
     },
     {
       "path": "figures/learning_dynamics_acquisition.pdf",
-      "bytes": 37574,
-      "sha256": "d6c599c0ece75de6de05fae09f3e00589a104cca1fdcbd941ac7b720684c795d"
+      "bytes": 37104,
+      "sha256": "72d2ba5248eae17a8c57d3c94f832bd47777b54e1f614ff6b2f45a284c2ab785"
     },
     {
       "path": "figures/learning_dynamics_acquisition.png",
-      "bytes": 377329,
-      "sha256": "fd88a898101602d52770b3dcb10e5b284f7c3d95bea7ab460d20c0a54f10953f"
+      "bytes": 371043,
+      "sha256": "45ce1169331e70ace7291f94547e357a0254ace4555a8d7bd009202fde131ca2"
     },
     {
       "path": "figures/learning_dynamics_main.pdf",
-      "bytes": 43048,
-      "sha256": "5caa3a2dbda86fd8618bf7ef2f3db4ae027092319673b4838588f1f436e75984"
+      "bytes": 43456,
+      "sha256": "d9f567a763c0fcacf26e15ec95c25c338d6a95207a9fbf05d9ac5627d844590d"
     },
     {
       "path": "figures/learning_dynamics_main.png",
-      "bytes": 435579,
-      "sha256": "200531fcae4a84f81837bf5f376a2124cf5e4cfb4e42db08fc4769bb754825d5"
+      "bytes": 407857,
+      "sha256": "0d69372d47af6b3da3cd82af0256f60728dd69fe8852662188845ad74f44283a"
     },
     {
       "path": "macros/controlled_cross_learner_macros.tex",
@@ -277,7 +282,7 @@
     {
       "path": "manifests/verification_results.json",
       "bytes": 1987,
-      "sha256": "6958d5617488a85b7c9aaed34c3491aea3269d8ffbdce45e90be42a8af2579af"
+      "sha256": "256aa4213820520100ac449aaed790d4d6a4b07a2a2ea56b3a3842958a4e07eb"
     },
     {
       "path": "pyproject.toml",

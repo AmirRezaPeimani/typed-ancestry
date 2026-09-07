@@ -298,7 +298,7 @@ def draw_effect_decomposition(ax: plt.Axes, effects: pd.DataFrame) -> None:
     ax.set_yticks([5, 4, 3, 1, 0, -1], labels)
     ax.set_xlim(-8, 32)
     ax.set_ylim(-1.75, 5.85)
-    ax.set_xlabel("Naïve accuracy - ancestry-safe accuracy (percentage points)")
+    ax.set_xlabel("Ancestor-included accuracy - ancestor-excluded accuracy (percentage points)")
     panel_title(ax, "C", "The boundary changes exposed validation,\nnot clean performance", y=1.02)
 
 

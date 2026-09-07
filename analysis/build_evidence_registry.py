@@ -152,7 +152,7 @@ def main() -> int:
                 evidence(
                     root,
                     "figures/candidate_selection_supp.pdf",
-                    "post hoc validation-objective sensitivity figure",
+                    "validation-weighting sensitivity figure",
                 ),
             ],
         },

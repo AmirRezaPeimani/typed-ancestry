@@ -136,7 +136,7 @@ def draw_schematic(ax: plt.Axes) -> None:
     ax.set_axis_off()
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
-    panel_header(ax, "A", "Typed ancestry across dataset views", y=1.005)
+    panel_header(ax, "A", "Cross-view training–validation links", y=1.005)
 
     card_y, card_h = 0.27, 0.56
     left_x, right_x, card_w = 0.015, 0.625, 0.36
@@ -330,7 +330,7 @@ def draw_interaction_facet(ax: plt.Axes, cells: pd.DataFrame, *, model: str, col
     ax.plot(x, clean, color=color, linewidth=1.15, linestyle="--", marker=marker, markerfacecolor="white", markeredgecolor=color, markersize=4.6, label="Clean", zorder=3)
     ax.set_xlim(-0.10, 1.10)
     ax.set_ylim(44, 67)
-    ax.set_xticks([0, 1], ["Ancestry-safe", "Naïve"])
+    ax.set_xticks([0, 1], ["Ancestor\nexcluded", "Ancestor\nincluded"])
     ax.set_title(title, loc="left", fontsize=FACET_SIZE, fontweight="semibold", color=color, pad=8)
     quiet_axis(ax, grid_axis="y")
     return {"target": target, "clean": clean, "untouched": untouched}
@@ -342,12 +342,12 @@ def draw_value_matrix(ax: plt.Axes, values: dict[str, np.ndarray], *, model: str
     ax.set_ylim(0, 1)
     marker = "o" if model == "word_tfidf_bt" else "s"
     fill = color if model == "word_tfidf_bt" else "white"
-    ax.text(0.02, 0.97, f"Target-minus-clean DiD\n{did}", ha="left", va="top", fontsize=ANNOTATION_SIZE, color=color, linespacing=1.12, bbox=dict(boxstyle="round,pad=0.24", facecolor="white", edgecolor=color, linewidth=0.7))
+    ax.text(0.02, 0.97, f"Target-minus-clean\neffect: {did}", ha="left", va="top", fontsize=6.5, color=color, linespacing=1.12, bbox=dict(boxstyle="round,pad=0.24", facecolor="white", edgecolor=color, linewidth=0.7))
 
     ax.add_patch(FancyBboxPatch((0.0, 0.04), 0.98, 0.58, boxstyle="round,pad=0.012,rounding_size=0.02", facecolor=PALE, edgecolor="#DDE1E5", linewidth=0.6))
     ax.plot([0.55, 0.55], [0.08, 0.57], color="#D8DDE2", linewidth=0.6)
-    ax.text(0.68, 0.54, "Safe", ha="center", va="center", fontsize=CELL_SIZE, fontweight="semibold")
-    ax.text(0.93, 0.54, "Naïve", ha="center", va="center", fontsize=CELL_SIZE, fontweight="semibold")
+    ax.text(0.62, 0.58, "Ancestor\nexcluded", ha="center", va="center", fontsize=5.5, fontweight="semibold")
+    ax.text(0.92, 0.58, "Ancestor\nincluded", ha="center", va="center", fontsize=5.5, fontweight="semibold")
     rows = [("Target", values["target"], 0.41, "-"), ("Clean", values["clean"], 0.27, "--")]
     for label, pair, y_value, linestyle in rows:
         ax.plot([0.025, 0.13], [y_value, y_value], color=color, linewidth=1.15 if label == "Target" else 0.9, linestyle=linestyle)
@@ -410,8 +410,8 @@ def draw_checkpoint_trajectory(ax: plt.Axes, trajectory: pd.DataFrame) -> None:
     ax.set_ylim(-4, 21)
     ax.set_xticks([20, 40, 60, 80, 100])
     ax.set_xlabel("Training completed (%)")
-    ax.set_ylabel("Target-minus-clean DiD (pp)")
-    panel_header(ax, "B", "Validation distortion during training", y=1.10)
+    ax.set_ylabel("Target-minus-clean effect (pp)")
+    panel_header(ax, "B", "Validation inflation across\ntraining prefixes", y=1.10, title_size=9.2)
 
 
 def controlled_summary_rows(trajectory: pd.DataFrame, arrival: dict[str, object]) -> list[dict[str, object]]:
@@ -420,7 +420,7 @@ def controlled_summary_rows(trajectory: pd.DataFrame, arrival: dict[str, object]
     return [
         {
             "group": "WORD TF-IDF",
-            "label": "Target-minus-clean DiD",
+            "label": "Target-minus-clean effect",
             "color": WORD,
             "marker": "o",
             "y": 3.6,
@@ -440,7 +440,7 @@ def controlled_summary_rows(trajectory: pd.DataFrame, arrival: dict[str, object]
         },
         {
             "group": "FROZEN MINILM",
-            "label": "Target-minus-clean DiD",
+            "label": "Target-minus-clean effect",
             "color": MINILM,
             "marker": "o",
             "y": 1.2,
@@ -477,7 +477,7 @@ def draw_controlled_summary(label_ax: plt.Axes, forest_ax: plt.Axes, value_ax: p
         )
         display_label = {
             "Target-minus-placebo arrival contrast": "Target-minus-placebo\narrival contrast",
-            "Target-minus-clean DiD": "Target-minus-clean\nDiD",
+            "Target-minus-clean effect": "Target-minus-clean\neffect",
         }.get(row["label"], row["label"])
         label_ax.text(
             0.0,
@@ -546,7 +546,7 @@ def make_figure_1(evidence: dict[str, object]) -> None:
     fig = plt.figure(figsize=(7.3, 7.05), constrained_layout=False)
     ax_a = fig.add_axes([0.055, 0.595, 0.925, 0.345])
     ax_b = fig.add_axes([0.235, 0.155, 0.375, 0.345])
-    ax_c = fig.add_axes([0.725, 0.155, 0.255, 0.345])
+    ax_c = fig.add_axes([0.725, 0.155, 0.225, 0.345])
     draw_schematic(ax_a)
     draw_exposure_tensor(ax_b, evidence["tensor"])
     draw_exposure_zoom(ax_c, evidence["endpoints"])
@@ -556,14 +556,14 @@ def make_figure_1(evidence: dict[str, object]) -> None:
 def make_figure_2(evidence: dict[str, object], event: pd.DataFrame) -> pd.DataFrame:
     fig = plt.figure(figsize=(7.3, 7.65), constrained_layout=False)
     fig.text(0.08, 0.972, "A", ha="left", va="top", fontsize=LETTER_SIZE, fontweight="bold")
-    fig.text(0.112, 0.972, "Boundary × evaluation interaction", ha="left", va="top", fontsize=TITLE_SIZE, fontweight="semibold")
+    fig.text(0.112, 0.972, "Accuracy by training condition", ha="left", va="top", fontsize=TITLE_SIZE, fontweight="semibold")
 
     ax_word = fig.add_axes([0.08, 0.755, 0.18, 0.145])
     ax_word_values = fig.add_axes([0.27, 0.755, 0.19, 0.145])
     ax_mini = fig.add_axes([0.55, 0.755, 0.18, 0.145])
     ax_mini_values = fig.add_axes([0.74, 0.755, 0.19, 0.145])
-    ax_word_strip = fig.add_axes([0.08, 0.685, 0.18, 0.045])
-    ax_mini_strip = fig.add_axes([0.55, 0.685, 0.18, 0.045])
+    ax_word_strip = fig.add_axes([0.08, 0.66, 0.18, 0.030])
+    ax_mini_strip = fig.add_axes([0.55, 0.66, 0.18, 0.030])
     word_values = draw_interaction_facet(ax_word, evidence["cells"], model="word_tfidf_bt", color=WORD, title="Word TF-IDF")
     mini_values = draw_interaction_facet(ax_mini, evidence["cells"], model="minilm_frozen_bt", color=MINILM, title="Frozen MiniLM")
     draw_value_matrix(ax_word_values, word_values, model="word_tfidf_bt", color=WORD, did="+14.3 pp [10.2, 18.4]")
@@ -573,7 +573,7 @@ def make_figure_2(evidence: dict[str, object], event: pd.DataFrame) -> pd.DataFr
 
     ax_b = fig.add_axes([0.08, 0.405, 0.36, 0.19])
     fig.text(0.54, 0.618, "C", ha="left", va="bottom", fontsize=LETTER_SIZE, fontweight="bold")
-    fig.text(0.584, 0.618, "Controlled-effect summary", ha="left", va="bottom", fontsize=TITLE_SIZE, fontweight="semibold")
+    fig.text(0.584, 0.618, "Controlled effects", ha="left", va="bottom", fontsize=TITLE_SIZE, fontweight="semibold")
     ax_c_labels = fig.add_axes([0.54, 0.405, 0.16, 0.19])
     ax_c_forest = fig.add_axes([0.70, 0.405, 0.12, 0.19])
     ax_c_values = fig.add_axes([0.825, 0.405, 0.16, 0.19])
@@ -592,7 +592,7 @@ def validate(effects: pd.DataFrame, event: pd.DataFrame) -> None:
         path = FIGURES / name
         if not path.exists() or path.stat().st_size < 10_000:
             raise RuntimeError(f"invalid figure: {path}")
-    word_did = effects[(effects.group == "WORD TF-IDF") & (effects.label == "Target-minus-clean DiD")].iloc[0]
+    word_did = effects[(effects.group == "WORD TF-IDF") & (effects.label == "Target-minus-clean effect")].iloc[0]
     word_arrival = effects[(effects.group == "WORD TF-IDF") & (effects.label == "Target-minus-placebo arrival contrast")].iloc[0]
     if not np.isclose(word_did.estimate, 14.2578125) or not np.isclose(word_arrival.estimate, 11.040202454200598):
         raise RuntimeError("controlled-effect summary does not match frozen evidence")

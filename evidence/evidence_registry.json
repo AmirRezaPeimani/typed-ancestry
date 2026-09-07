@@ -47,10 +47,10 @@
           "sha256": "a4af4d422868445dbb19e3309a456e1ecd079ca10c1104734e43b406dd6c57a2"
         },
         {
-          "bytes": 33510,
+          "bytes": 33697,
           "path": "figures/controlled_cross_learner_factorial_main.pdf",
           "role": "publication figure",
-          "sha256": "d900ba0a8b61ec2db2ae83b03cb06cc6a641d780587261d7ce4980969c4dd0a5"
+          "sha256": "7d3037c7a1ce79ac6351f4985886188385c14ede61f419527611cd09cf01c193"
         }
       ]
     },
@@ -107,16 +107,16 @@
           "sha256": "7fae589983eb2f2c765bb23f4bffdd8950ecb8d628f91a347f33da57c960e6ea"
         },
         {
-          "bytes": 30652,
+          "bytes": 30682,
           "path": "figures/candidate_selection_main.pdf",
           "role": "prospective candidate-selection figure",
-          "sha256": "7941f7161b29bfb6c23972b2541153eb346b4dcb1ef4cf1e18b9518c9c48f3af"
+          "sha256": "c33aa8db08ea2203b0f0ed3c2ff9ad245a24aeff9753db6daf9362614215f0bf"
         },
         {
-          "bytes": 35456,
+          "bytes": 55463,
           "path": "figures/candidate_selection_supp.pdf",
-          "role": "post hoc validation-objective sensitivity figure",
-          "sha256": "6cab9d521871f8976c2a5f054fda9a130712a9de1cc9040961b37c42a9c92865"
+          "role": "validation-weighting sensitivity figure",
+          "sha256": "f065d35c7e5938a4279f3d9a041e02e2a28af67a323fe0b67878d2f914cad984"
         }
       ]
     },
@@ -137,16 +137,16 @@
           "sha256": "ef3e8fe514dd0c61866121a4eca07b955510665aba4356907bae87c429b373cd"
         },
         {
-          "bytes": 43048,
+          "bytes": 43456,
           "path": "figures/learning_dynamics_main.pdf",
           "role": "typed-boundary measurement figure",
-          "sha256": "5caa3a2dbda86fd8618bf7ef2f3db4ae027092319673b4838588f1f436e75984"
+          "sha256": "d9f567a763c0fcacf26e15ec95c25c338d6a95207a9fbf05d9ac5627d844590d"
         },
         {
-          "bytes": 37574,
+          "bytes": 37104,
           "path": "figures/learning_dynamics_acquisition.pdf",
           "role": "controlled acquisition figure",
-          "sha256": "d6c599c0ece75de6de05fae09f3e00589a104cca1fdcbd941ac7b720684c795d"
+          "sha256": "72d2ba5248eae17a8c57d3c94f832bd47777b54e1f614ff6b2f45a284c2ab785"
         },
         {
           "bytes": 655,
@@ -173,34 +173,34 @@
           "sha256": "ab8fdf123acf2e301901e4fa32f433ce01d8130713514793cb542991f810abe5"
         },
         {
-          "bytes": 43048,
+          "bytes": 43456,
           "path": "figures/learning_dynamics_main.pdf",
           "role": "typed-ancestry design and exposure figure",
-          "sha256": "5caa3a2dbda86fd8618bf7ef2f3db4ae027092319673b4838588f1f436e75984"
+          "sha256": "d9f567a763c0fcacf26e15ec95c25c338d6a95207a9fbf05d9ac5627d844590d"
         }
       ]
     }
   ],
   "files": {
     "figures/candidate_selection_main.pdf": {
-      "bytes": 30652,
-      "sha256": "7941f7161b29bfb6c23972b2541153eb346b4dcb1ef4cf1e18b9518c9c48f3af"
+      "bytes": 30682,
+      "sha256": "c33aa8db08ea2203b0f0ed3c2ff9ad245a24aeff9753db6daf9362614215f0bf"
     },
     "figures/candidate_selection_supp.pdf": {
-      "bytes": 35456,
-      "sha256": "6cab9d521871f8976c2a5f054fda9a130712a9de1cc9040961b37c42a9c92865"
+      "bytes": 55463,
+      "sha256": "f065d35c7e5938a4279f3d9a041e02e2a28af67a323fe0b67878d2f914cad984"
     },
     "figures/controlled_cross_learner_factorial_main.pdf": {
-      "bytes": 33510,
-      "sha256": "d900ba0a8b61ec2db2ae83b03cb06cc6a641d780587261d7ce4980969c4dd0a5"
+      "bytes": 33697,
+      "sha256": "7d3037c7a1ce79ac6351f4985886188385c14ede61f419527611cd09cf01c193"
     },
     "figures/learning_dynamics_acquisition.pdf": {
-      "bytes": 37574,
-      "sha256": "d6c599c0ece75de6de05fae09f3e00589a104cca1fdcbd941ac7b720684c795d"
+      "bytes": 37104,
+      "sha256": "72d2ba5248eae17a8c57d3c94f832bd47777b54e1f614ff6b2f45a284c2ab785"
     },
     "figures/learning_dynamics_main.pdf": {
-      "bytes": 43048,
-      "sha256": "5caa3a2dbda86fd8618bf7ef2f3db4ae027092319673b4838588f1f436e75984"
+      "bytes": 43456,
+      "sha256": "d9f567a763c0fcacf26e15ec95c25c338d6a95207a9fbf05d9ac5627d844590d"
     },
     "macros/controlled_neural_macros.tex": {
       "bytes": 1301,

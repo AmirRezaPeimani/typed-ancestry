@@ -1,18 +1,10 @@
 # Typed Ancestry for Post-Training Evaluation
 
-This repository accompanies the study *Typed Ancestry Reveals
-Learner-Dependent Validation Distortion in Multi-View Post-Training Data*. It
-provides a reusable exact-ancestry audit library, the controlled learning
-experiments, saved prediction-level evidence, and scripts for reproducing the
-reported tables and figures.
+This repository accompanies *Cross-View Contamination Inflates Reward-Model Validation Accuracy*, prepared for Language Resources and Evaluation. It provides an exact-ancestry audit library, controlled learning experiments, saved prediction-level evidence, and scripts for reproducing the reported tables and figures.
 
-Typed ancestry represents exact cross-view relationships with field-aware
-atoms, including contexts and directed edits. The controlled experiment holds
-evaluation records and training budgets fixed while replacing a 512-pair
-ancestor block with a component-disjoint filler block. Word and character
-learners show positive target-specific validation distortion; the
-Qwen2.5-1.5B reward learner is near zero under the same estimand. The result
-is learner-conditioned and does not imply a universal effect of exposure.
+Field-level ancestry matching identifies cross-view training–validation links that complete-row checks miss. In the controlled experiments, **Ancestor included** and **Ancestor excluded** compare training sets with an exact ancestor block or a matched filler block. Evaluation records and training budgets remain fixed. The target-minus-clean effect measures the change on exposed targets minus the corresponding change on ancestry-clean validation. Its magnitude depends on the learner; none of the three controlled learners shows a clear corresponding gain on untouched evaluation.
+
+The internal keys `naive` and `safe` retain their original meanings: ancestor included and ancestor excluded, respectively. They are preserved in code, configurations, and saved results for reproducibility.
 
 ## Installation
 

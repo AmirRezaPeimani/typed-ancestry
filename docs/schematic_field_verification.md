@@ -40,7 +40,7 @@ hash(normalize(original_response), normalize(good_edited_response))
 ```
 
 matches that index. Thus the displayed \(r_0 \rightarrow r_1\) directed edit
-is the exact relation used to define the naïve ancestor. Every selected target
+is the exact relation used to define the included ancestor. Every selected target
 has one assigned donor under the frozen construction.
 
 ## Primary component policy
@@ -50,9 +50,9 @@ Standalone response and feedback atoms are exact exposure endpoints but have
 `linkable=False`; feedback equality therefore does not merge ancestry
 components under the primary policy.
 
-An exact reconstruction of the 512 selected targets and 512 safe-filler
+An exact reconstruction of the 512 selected targets and 512 ancestor-excluded filler
 identifiers found zero shared component-linking atoms across the target and
-safe-filler sets. One exact feedback atom was shared, providing a concrete
+ancestor-excluded filler sets. One exact feedback atom was shared, providing a concrete
 case where exposure is reported without merging the records into one
 component.
 
